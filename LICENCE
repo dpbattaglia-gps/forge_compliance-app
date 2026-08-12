@@ -1,0 +1,73 @@
+# PROPRIETARY SOFTWARE LICENCE NOTICE
+
+Copyright © 2026 Global Power Solutions Pty Ltd.
+All rights reserved.
+
+## 1. Proprietary Material
+
+The software, container images, deployment configurations, documentation, associated files and other materials made available through this repository or associated distribution channels ("Software") are proprietary to Global Power Solutions Pty Ltd ("GPS") and/or its licensors.
+
+Except for Third-Party Software expressly identified in accompanying notices, all rights, title and interest in and to the Software are reserved by GPS.
+
+## 2. No Open-Source Licence Granted
+
+The availability of this repository, documentation, deployment files, container image references or other materials does not constitute the release of the Software as open-source software.
+
+No licence under the MIT, Apache, BSD, GPL or any other open-source licence is granted to GPS proprietary software merely because open-source components may be used by or distributed with the Software.
+
+## 3. Authorised Use
+
+The Software may only be accessed, installed, executed or otherwise used by a customer or other party that has been expressly authorised by GPS under a valid written agreement, order, licence or statement of work.
+
+Any authorised use is subject to the scope, duration, environment, user, site and other restrictions contained in the applicable agreement with GPS.
+
+## 4. Restrictions
+
+Except where expressly authorised in writing by GPS or required by applicable law, the Software must not be:
+
+* copied or reproduced other than as reasonably necessary for authorised deployment, operation or backup;
+* sold, sublicensed, leased, rented, transferred, published or redistributed;
+* made available to any unauthorised third party;
+* used to provide a commercial service to a third party;
+* modified, adapted or used to create derivative proprietary products;
+* reverse engineered, decompiled or disassembled; or
+* used to circumvent technical, licensing or access controls.
+
+Nothing in this notice limits any right that cannot lawfully be excluded or restricted.
+
+## 5. Source Code
+
+No source-code rights are granted by provision of the Software in executable, object-code or container-image form.
+
+Provision of deployment files, configuration files, container manifests, documentation or other supporting material does not constitute delivery or licensing of the source code for GPS proprietary software.
+
+## 6. Third-Party Software
+
+The Software may contain or use software, libraries, frameworks, operating-system components and other materials owned by third parties.
+
+Those components remain subject to their respective licences.
+
+Applicable copyright notices, licence notices and other required information are contained in or referenced by the accompanying THIRD_PARTY_NOTICES documentation.
+
+Where a third-party licence grants rights that cannot be restricted by this notice, that third-party licence governs those components only.
+
+## 7. Ownership
+
+Nothing in this notice transfers ownership of the Software or any intellectual property rights in the Software to a customer or other recipient.
+
+All rights not expressly granted are reserved by GPS and its licensors.
+
+## 8. Confidentiality
+
+Non-public Software, documentation, credentials, deployment information and technical information supplied by GPS must be treated as confidential where required by the applicable agreement between GPS and the recipient.
+
+## 9. Applicable Customer Agreement
+
+This notice supplements the applicable commercial agreement between GPS and the authorised customer.
+
+If there is an inconsistency between this notice and an executed agreement with GPS, the executed agreement prevails to the extent of that inconsistency.
+
+---
+
+Global Power Solutions Pty Ltd
+Australia
