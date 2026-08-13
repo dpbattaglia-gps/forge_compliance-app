@@ -3,6 +3,9 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## V1.0.1 — 2026-08-13
+- Release V1.0.1.
+
 ## v1.0.0
 - Initial packaged release: jobs, service reports & PDF approvals, on‑site sign‑on,
   attendance, equipment/assets, incidents, clients & suppliers, document control,
