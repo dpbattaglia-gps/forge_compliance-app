@@ -1,13 +1,44 @@
 # Forge Compliance
 
-**Version:** `V1.0.1` · released `2026-08-13`
+**Version:** `v1.1` · released `2026-08-13`
 
-Self‑hosted deployment for **Forge Compliance** — field operations & compliance:
-jobs, service reports with PDF sign‑off, on‑site sign‑on & attendance, equipment/assets,
-incidents, clients & suppliers, document control, staff & training, and notifications.
+Official **distribution** repository for **Forge Compliance** — the self‑hosted field operations
+& compliance platform: jobs, service reports with PDF sign‑off, on‑site sign‑on & attendance,
+equipment/assets, incidents, clients & suppliers, document control, staff & training, and notifications.
 
-> This repository is **deploy‑only** and is regenerated automatically on every release.
-> It contains no application source — it runs the prebuilt Forge Compliance images from GHCR.
+> This repo contains only what you need to **run** the product — `docker-compose.yml`, this guide, and
+> `.env.template`. It holds **no application source**. The app runs as prebuilt images pulled from GitHub
+> Container Registry (GHCR).
+
+## What you'll need (from your purchase email / re‑download portal)
+- Your **licence key** — to activate the app.
+- Your **registry access token** (+ username) — to pull the private images.
+
+Lost them? Re‑download any time from the **“Re‑download your licence”** page on our website using your
+purchase email and licence key.
+
+---
+
+## ⚡ Quick start (copy‑paste)
+Prereqs: a Linux host with **Docker** + **Docker Compose v2**.
+```bash
+# 1. Sign in to the image registry (username + token are in your purchase email)
+echo <ACCESS_TOKEN> | docker login ghcr.io -u <REGISTRY_USERNAME> --password-stdin
+
+# 2. Get the deploy files (this repo)
+git clone https://github.com/dpbattaglia-gps/forge_compliance-app.git
+cd forge_compliance-app
+
+# 3. Configure
+cp .env.template .env
+#   then edit .env → set JWT_SECRET (openssl rand -hex 32) and APP_BASE_URL
+
+# 4. Launch
+docker compose up -d
+```
+Then open `http://<host>:8080`, log in, and go to **Settings → Licence** to paste your licence key. Done.
+
+Full details below.
 
 ---
 
