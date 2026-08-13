@@ -1,0 +1,49 @@
+# Forge Compliance — deploy stack (pull-only). Runs prebuilt GHCR images.
+# Usage:  cp .env.template .env  &&  edit .env (set JWT_SECRET)  &&  docker compose up -d
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    image: ${BACKEND_IMAGE:?set BACKEND_IMAGE in .env}
+    restart: unless-stopped
+    depends_on:
+      mongo:
+        condition: service_healthy
+    environment:
+      MONGO_URL: mongodb://mongo:27017
+      DB_NAME: ${DB_NAME:-forge_compliance}
+      JWT_SECRET: ${JWT_SECRET:?set a long random JWT_SECRET in .env}
+      COOKIE_SECURE: ${COOKIE_SECURE:-1}
+      APP_BASE_URL: ${APP_BASE_URL:-}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      LICENCE_SERVER_URL: ${LICENCE_SERVER_URL:-https://forgecompliance.org}
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USERNAME: ${SMTP_USERNAME:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_FROM: ${SMTP_FROM:-}
+      CF_ACCESS_TEAM_DOMAIN: ${CF_ACCESS_TEAM_DOMAIN:-}
+      CF_ACCESS_AUDIENCE: ${CF_ACCESS_AUDIENCE:-}
+    expose:
+      - "8001"
+
+  frontend:
+    image: ${FRONTEND_IMAGE:?set FRONTEND_IMAGE in .env}
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "${HTTP_PORT:-8080}:80"
+
+volumes:
+  mongo_data:
