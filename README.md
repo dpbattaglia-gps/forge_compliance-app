@@ -1,6 +1,6 @@
 # Forge Compliance
 
-**Version:** `main` · released `2026-08-13`
+**Version:** `V1.0.0` · released `2026-08-13`
 
 Self‑hosted deployment for **Forge Compliance** — field operations & compliance:
 jobs, service reports with PDF sign‑off, on‑site sign‑on & attendance, equipment/assets,
