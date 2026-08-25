@@ -34,6 +34,12 @@ services:
       SMTP_FROM: ${SMTP_FROM:-}
       CF_ACCESS_TEAM_DOMAIN: ${CF_ACCESS_TEAM_DOMAIN:-}
       CF_ACCESS_AUDIENCE: ${CF_ACCESS_AUDIENCE:-}
+      BACKUP_DIR: ${BACKUP_DIR:-}
+      BACKUP_KEEP: ${BACKUP_KEEP:-14}
+      BACKUP_INTERVAL_HOURS: ${BACKUP_INTERVAL_HOURS:-24}
+    volumes:
+      # Host folder that receives the automatic nightly .zip backups (matches BACKUP_DIR).
+      - ${BACKUP_HOST_DIR:-./backups}:/backups
     expose:
       - "8001"
 
