@@ -3,6 +3,41 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.1 — 2026-08-27
+
+- AI error deep-link
+- AI Calls audit log
+- AI tuning knobs + shared helper + reviewer-picked photos + thinking-safe parsing — built & tested (7/7)
+- Install nudge + desktop start-view fix + offline-node alert
+- PWA install offer + phone→mobile routing + stale-node badge
+- Per-node version check on the Servers page
+- Automated release notes + GitHub Release
+- Release image-name fix + Backup Health on Servers page
+- Servers Page: Cluster Dashboard + Guarded Failover
+- Nameplate Reader + Incident AI Assist
+- Quiet Hours + Vision (VLM) AI Upgrades
+- Web Push + Server Nudge + Tunable Timing
+- Auto-Retry Nudge + App-Tile Badge
+- Tappable sync badge — details + retry
+- Offline photos + sync badge
+- Offline sign-on
+- install banner + manager "My team" ticket upload (offline sign-on scoped next)
+- Worker mobile app — Phase 1
+- Clarified backup question + fixed a real backup gap
+- verified (features #1, #3, #4) + DB/failover advice (#2)
+- Serviced Equipment — reminder rules + bulk edit + sort/filter
+- Security Audit + Remediation
+- Photo compression + send-history detail
+- Report send/re-upload enhancements
+- Image slimming + release automation
+- Confirmed — here's the clean model and what to do
+- Distribution build scaffolded — streamlined product image (no demo/welcome/Stripe/licence-gen)
+- Admin Integrations tab + Cloudflare Access diagnostics
+- Licence-server default + Forge Compliance branding
+- Cloudflare Access SSO + dedicated marketing SMTP
+- Landing form + spam protection + Licensing (model B)
+- Landing lead form — email validation + simplified consent (TESTED iter104 via testing_agent: backend 100%, frontend 100…
+
 ## v1.3.0 — 2026-08-27
 
 - AI error deep-link
