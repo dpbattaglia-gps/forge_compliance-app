@@ -3,6 +3,10 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.2 — 2026-08-27
+
+- All four items are implemented and verified
+
 ## v1.3.1 — 2026-08-27
 
 - AI error deep-link
