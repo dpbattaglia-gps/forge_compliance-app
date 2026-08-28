@@ -3,6 +3,17 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.6 — 2026-08-28
+
+- Servers page: give each server a friendly name, and single standalone servers now show their version
+- AI Calls log now shows the model's reasoning (chain-of-thought) and flags responses that were cut off
+- Report AI review now runs in the background — keep working while it checks; results appear when ready
+- Report AI review is now more reliable: deterministic checking, an automatic retry, and a clear High-confidence / Review-carefully badge showing exactly what was analysed
+- Job photos are now understood automatically on upload — each gets an AI caption, category and any notable observations, which you can edit
+- Report AI review now verifies the report claim-by-claim (a statement check: verified / contradicted / unsupported) and understands your attached photos
+- Report AI review learns your brand voice from your own reject notes on past reports, plus an optional house-style you can set in Settings → Brand
+- Cleaner, controlled release notes (curated per release instead of auto-scraped from commits)
+
 ## v1.3.5 — 2026-08-27
 
 - Servers page: give each server a friendly name, and single standalone servers now show their version
