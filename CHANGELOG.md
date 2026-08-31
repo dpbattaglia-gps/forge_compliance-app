@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.11 — 2026-08-31
+
+- Added an Actions hub on mobile to bring together your due training, licences, renewals, and team approvals in one place, with quick approve/reject actions.
+- Let managers approve or reject items directly from the mobile app without leaving the main workflow.
+- Added an admin-only option to hide owners or other excluded staff from personnel lists, approvals, training views, and related tracking screens.
+- Improved compliance views so excluded accounts no longer clutter team lists or reporting.
+- Simplified our release process so updates are generated automatically from recent changes.
+- Reduced build overhead by stopping an extra backend image from being published on every update.
+
 ## v1.3.10 — 2026-08-31
 
 - The phone experience is now a full, self-contained app: a bottom tab bar (Home, Jobs, Training, More) with its own screens, so field crews stay in the mobile app instead of jumping to the desktop site
