@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.10 — 2026-08-31
+
+- The phone experience is now a full, self-contained app: a bottom tab bar (Home, Jobs, Training, More) with its own screens, so field crews stay in the mobile app instead of jumping to the desktop site
+- New mobile dashboard shows what matters onsite at a glance — active jobs, what's coming up, and renewals due for you and the people you manage — with tap-through tiles
+- Managers get a quick mobile job view (sign-on QR, who's onsite, and required documents) without opening the full desktop page
+- Notifications now live inside the mobile app, and today's jobs are cached so "Coming up" and sign-on still work with no signal on site
+- Microsoft (Entra ID) sign-in is more reliable, with clear on-screen messages instead of a generic error if something is misconfigured
+- Signing out under Cloudflare now cleanly signs you back in next time, including on the installed phone app
+- Smaller, faster app images for quicker, more reliable updates
+- Mobile home dashboard streamlined: tappable tiles now stay inside the phone app, a one-tap "Report an incident" button, searchable team list, tidier header, and renewals you can tap straight through to fix
+- Mobile Jobs now lists the job number with client and site, with Active/All filtering and search
+- New mobile "My profile" screen (details, licences and competencies with expiry status)
+- Clearer "Install app" guidance on iPhone, and Microsoft sign-in now shows a helpful message instead of an error page if something needs fixing
+
 ## v1.3.9 — 2026-08-31
 
 - The phone experience is now a full, self-contained app: a bottom tab bar (Home, Jobs, Training, More) with its own screens, so field crews stay in the mobile app instead of jumping to the desktop site
