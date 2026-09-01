@@ -3,6 +3,14 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.17 — 2026-09-01
+
+- Fixed Microsoft sign-in so users stay on the same site they started on, instead of being bounced to the Cloudflare access page.
+- Improved logout behavior so it uses the current site’s address and only shows the Cloudflare logout step when it’s actually needed.
+- Added support for multiple Microsoft redirect addresses, so each site can use the right login path automatically.
+- Resolved an issue that could send users to the wrong host after successful login when the app base URL was set to a public address.
+- Added test coverage to prevent this login/logout host mix-up from coming back.
+
 ## v1.3.16 — 2026-09-01
 
 - Fixed sign-in on the internal domain so the app no longer routes users through Cloudflare during login.
