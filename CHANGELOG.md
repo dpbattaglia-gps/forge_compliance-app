@@ -3,6 +3,13 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.12 — 2026-09-01
+
+- See outstanding work at a glance with a red count badge on the Actions tab and on the app icon.
+- Open job photos in a full-screen in-app viewer with swipe and arrow navigation, then return cleanly to the job page.
+- Browse attached files as thumbnail grids for easier review on mobile.
+- Fixed Microsoft sign-in errors caused by a date/time mismatch during the login callback.
+
 ## v1.3.11 — 2026-08-31
 
 - Added an Actions hub on mobile to bring together your due training, licences, renewals, and team approvals in one place, with quick approve/reject actions.
