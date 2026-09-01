@@ -3,6 +3,11 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.16 — 2026-09-01
+
+- Fixed sign-in on the internal domain so the app no longer routes users through Cloudflare during login.
+- Improved authentication handling to keep the internal Microsoft/Entra login flow on the correct domain.
+
 ## v1.3.15 — 2026-09-01
 
 - Fixed an issue where older Forge versions could appear as separate offline servers after an update.
