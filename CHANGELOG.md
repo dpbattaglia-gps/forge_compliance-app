@@ -3,6 +3,12 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.14 — 2026-09-01
+
+- Fixed logout so LAN users stay on the local domain instead of being sent through Cloudflare sign-out.
+- Removed a brief password-form flash when signing out on the Cloudflare domain, making logout smoother.
+- Cleaned up unused code and files from the app to reduce bloat and keep the product lean.
+
 ## v1.3.13 — 2026-09-01
 
 - Simplified sign-in so login flows are more reliable behind Cloudflare Access.
