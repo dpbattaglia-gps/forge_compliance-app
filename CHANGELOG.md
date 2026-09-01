@@ -3,6 +3,11 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.18 — 2026-09-01
+
+- Fixed Cloudflare sign-out so users are properly re-challenged by Access instead of being dumped back to the app login screen.
+- Improved logout behavior to remove the brief “flash” of the wrong page during sign-out.
+
 ## v1.3.17 — 2026-09-01
 
 - Fixed Microsoft sign-in so users stay on the same site they started on, instead of being bounced to the Cloudflare access page.
