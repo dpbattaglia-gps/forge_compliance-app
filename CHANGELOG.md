@@ -3,6 +3,11 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.15 — 2026-09-01
+
+- Fixed an issue where older Forge versions could appear as separate offline servers after an update.
+- Improved server tracking so machines are recognized consistently across version or image changes.
+
 ## v1.3.14 — 2026-09-01
 
 - Fixed logout so LAN users stay on the local domain instead of being sent through Cloudflare sign-out.
