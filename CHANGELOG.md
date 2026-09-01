@@ -3,6 +3,13 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.13 — 2026-09-01
+
+- Simplified sign-in so login flows are more reliable behind Cloudflare Access.
+- Fixed the “Something went wrong” error that could block users from logging in.
+- Added clearer push notification handling and messaging.
+- Added a bell badge to make unread alerts easier to spot.
+
 ## v1.3.12 — 2026-09-01
 
 - See outstanding work at a glance with a red count badge on the Actions tab and on the app icon.
