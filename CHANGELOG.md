@@ -3,6 +3,17 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.27 — 2026-09-02
+
+- Job types now have their own colors, making Service and Project work easier to spot in job lists and job details.
+- Job lists now show a Type column with colored badges, so you can scan job type at a glance on web and mobile.
+- Equipment records now include an Equipment Type field, with common types like UPS, BESS, RTU, PLC, Diesel Generator, Transformer, and Switchgear.
+- You can now filter Serviced Equipment by type, sort by type, and include the type in CSV exports.
+- Mobile and web equipment screens now support scanning a nameplate photo to auto-fill equipment details, including equipment type when available.
+- Job numbers and service numbers now auto-generate from the job type and client, with separate counters for each prefix.
+- The old job-level Equipment Type field has been replaced by Job Type settings, giving more flexible setup and clearer job classification.
+- Existing jobs were updated automatically during the release so current records keep working without manual cleanup.
+
 ## v1.3.26 — 2026-09-02
 
 - Clarified the mobile bell badge so it now shows unread notifications only, with “Actions due” shown separately.
