@@ -3,6 +3,12 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.22 — 2026-09-02
+
+- Fixed a notification-routing bug so alerts now reach the right people more reliably, including manager-based recipients.
+- Improved push notification delivery so “report ready for review” and similar alerts are less likely to be missed.
+- Audited notification sending across the app and corrected remaining recipient-type issues.
+
 ## v1.3.21 — 2026-09-02
 
 - Added a “Test push notification” button in Admin > Settings > Notifications so admins can verify push alerts are working.
