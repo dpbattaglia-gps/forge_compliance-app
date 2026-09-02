@@ -3,6 +3,13 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.25 — 2026-09-02
+
+- Add and edit equipment directly from the mobile job page, with fields for make, model, serial number, rating, and details.
+- Equipment entered on a job now stays linked for reporting and photo tagging, making job records more consistent.
+- Updated the notifications recipient layout so chips are easier to scan and fit better on the page.
+- Kept the preview/test button in its own space for a cleaner, more usable notifications screen.
+
 ## v1.3.24 — 2026-09-02
 
 - Maintenance release.
