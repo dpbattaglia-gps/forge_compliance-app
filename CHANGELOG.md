@@ -3,6 +3,12 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.20 — 2026-09-02
+
+- Fixed a login/logout issue so users can sign out and back in more reliably.
+- Improved the Cloudflare Access sign-in flow to handle short delays after logout.
+- Reduced the chance of being temporarily blocked from logging back in after ending a session.
+
 ## v1.3.19 — 2026-09-02
 
 - Added a branded sign-out screen so users see a clear “Signing you out…” message before being logged out.
