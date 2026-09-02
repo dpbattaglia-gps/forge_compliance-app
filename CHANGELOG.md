@@ -3,6 +3,13 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.26 — 2026-09-02
+
+- Clarified the mobile bell badge so it now shows unread notifications only, with “Actions due” shown separately.
+- Service reminders now link to the Description of Works instead of a task, making reminder setup clearer across equipment, rule, and bulk edit screens.
+- When a reminder rule is applied, due dates are now filled in automatically from the completed job, reducing manual entry.
+- Existing task-only reminder rules now show as manual until a Description of Works is selected, with a simple way to re-link and update all matching items at once.
+
 ## v1.3.25 — 2026-09-02
 
 - Add and edit equipment directly from the mobile job page, with fields for make, model, serial number, rating, and details.
