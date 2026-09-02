@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.23 — 2026-09-02
+
+- The preview/test action is now a separate button column, making it easier to spot and clearly distinct from recipient choices.
+- You can now send a test alert to yourself directly from the recipient setup modal.
+- Notification recipient routing has been fixed so the right managers receive report submitted and expiring competency alerts.
+- Web push notifications are now much easier to set up in production, with the needed settings and key file wiring fixed.
+- A ready-to-use VAPID key setup has been added, so push notifications can be enabled without needing local Python tools.
+- The setup guide and environment template were updated with simpler Docker-based steps for generating and configuring push keys.
+- Once push is configured, the iOS app can show the “Turn on notifications” card and Forge notifications in the iOS settings page.
+
 ## v1.3.22 — 2026-09-02
 
 - Fixed a notification-routing bug so alerts now reach the right people more reliably, including manager-based recipients.
