@@ -3,6 +3,11 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.19 — 2026-09-02
+
+- Added a branded sign-out screen so users see a clear “Signing you out…” message before being logged out.
+- Improved logout behavior to redirect more smoothly after sign-out.
+
 ## v1.3.18 — 2026-09-01
 
 - Fixed Cloudflare sign-out so users are properly re-challenged by Access instead of being dumped back to the app login screen.
