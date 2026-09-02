@@ -3,6 +3,12 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.21 — 2026-09-02
+
+- Added a “Test push notification” button in Admin > Settings > Notifications so admins can verify push alerts are working.
+- Improved push notification reliability by automatically re-sending the device’s current subscription whenever the app opens or returns to the foreground.
+- Made push setup easier to troubleshoot by confirming the push endpoint is active and properly protected, rather than unavailable.
+
 ## v1.3.20 — 2026-09-02
 
 - Fixed a login/logout issue so users can sign out and back in more reliably.
