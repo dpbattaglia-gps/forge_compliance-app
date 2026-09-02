@@ -3,6 +3,10 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.24 — 2026-09-02
+
+- Maintenance release.
+
 ## v1.3.23 — 2026-09-02
 
 - The preview/test action is now a separate button column, making it easier to spot and clearly distinct from recipient choices.
