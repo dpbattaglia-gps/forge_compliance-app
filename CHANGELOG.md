@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.28 — 2026-09-03
+
+- Added custom equipment fields so teams can define their own specs, capture them on equipment records, and keep them visible in the relevant parts of the app.
+- Made equipment rules easier to set up with separate dropdowns for type, OEM, and model, improving matching and reducing manual entry.
+- Added a one-click select-all for the equipment list that works with the current filters and sorting, so bulk actions are faster and safer.
+- Let users show custom fields as columns in the equipment register, sort them, and save those columns as the default view.
+- Added a field-based filter in the equipment register so users can narrow equipment lists by custom field values.
+- Enabled service reminders to be calculated from an equipment date field plus an interval, such as setting an end-of-life reminder from a battery install date.
+- Improved reminder setup so users can choose to use a date field when creating or updating reminders on equipment and in rules.
+
 ## v1.3.27 — 2026-09-02
 
 - Job types now have their own colors, making Service and Project work easier to spot in job lists and job details.
