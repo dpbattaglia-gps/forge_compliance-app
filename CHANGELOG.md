@@ -3,6 +3,12 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.29 — 2026-09-03
+
+- You can now apply one custom equipment field to multiple equipment types at once, making setup easier and reducing duplicate entries.
+- The Catalogs area has been redesigned into a cleaner grouped accordion layout, making it easier to find and manage items.
+- The first Catalogs section now opens by default, helping you get to the most-used settings faster.
+
 ## v1.3.28 — 2026-09-03
 
 - Added custom equipment fields so teams can define their own specs, capture them on equipment records, and keep them visible in the relevant parts of the app.
