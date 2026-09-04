@@ -3,6 +3,11 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.30 — 2026-09-04
+
+- Fixed an issue where custom field values could be saved under the wrong key when labels started the same or changed as you typed.
+- Improved custom field handling so data now stays tied to the correct field as you enter or edit labels.
+
 ## v1.3.29 — 2026-09-03
 
 - You can now apply one custom equipment field to multiple equipment types at once, making setup easier and reducing duplicate entries.
