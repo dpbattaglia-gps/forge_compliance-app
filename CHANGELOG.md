@@ -3,6 +3,13 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.32 — 2026-09-06
+
+- Added photo categories, so users can organize uploads more easily.
+- Enabled captions to be added when uploading photos.
+- Added photo cropping so images can be trimmed before saving.
+- Removed the Fleet page, since compliance due dates are already shown on the Compliance page.
+
 ## v1.3.31 — 2026-09-06
 
 - Added inline captions for each photo in Job Detail so managers can label images quickly and save changes instantly.
