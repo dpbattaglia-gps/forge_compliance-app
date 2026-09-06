@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.33 — 2026-09-06
+
+- Added stronger access controls for file downloads so users can only open files they’re allowed to see.
+- Fixed a regression that was blocking legitimate contractor downloads for files without owner details.
+- Required users to be signed in before adding or editing on-site equipment, closing an access gap on public pages.
+- Made photo category updates more reliable so your chosen category is no longer overwritten by background AI or other updates.
+- Improved equipment edit rows in Settings so they behave correctly after the recent form changes.
+- Reduced the chance of silent data mix-ups by giving user edits higher priority than automated updates.
+
 ## v1.3.32 — 2026-09-06
 
 - Added photo categories, so users can organize uploads more easily.
