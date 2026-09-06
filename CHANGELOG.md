@@ -3,6 +3,12 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.31 — 2026-09-06
+
+- Added inline captions for each photo in Job Detail so managers can label images quickly and save changes instantly.
+- Made equipment field specs easier to organize by adding drag-and-drop reordering, with up/down buttons as a backup.
+- Kept equipment spec display order aligned with the order set in Admin, so the on-equipment view matches what admins arrange.
+
 ## v1.3.30 — 2026-09-04
 
 - Fixed an issue where custom field values could be saved under the wrong key when labels started the same or changed as you typed.
