@@ -3,6 +3,17 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.35 — 2026-09-07
+
+- Mobile upload and equipment dialogs now fit better on phones, with scrolling that stays within the screen.
+- Mobile Jobs now includes a sort control, with newest jobs shown first by default and your choice saved on each device.
+- Full-size photos now open faster and more reliably on mobile by loading a smaller viewing copy first, with an option to open the original image.
+- Older photos are being automatically reduced in size in the background to improve performance and save memory.
+- The Equipment page now has a clearer layout with Overview, Files, and a new Timeline showing the full history for each unit.
+- QR labels are back on the Equipment side panel for quicker access.
+- The Equipment table now shows ratings and lets you add more useful columns like OEM, model, location, and notes.
+- Equipment list columns are now sortable, making it easier to find and compare assets.
+
 ## v1.3.34 — 2026-09-07
 
 - Faster photo galleries now load thumbnails more efficiently, so large job and equipment photo sets open much quicker.
