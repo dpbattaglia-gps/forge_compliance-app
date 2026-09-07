@@ -3,6 +3,17 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.34 — 2026-09-07
+
+- Faster photo galleries now load thumbnails more efficiently, so large job and equipment photo sets open much quicker.
+- Added a dedicated Equipment page with tabs for details, service reminders, files, and service history, plus QR and print actions.
+- You can now add equipment directly from a job’s Equipment card, including selecting existing site equipment or creating a new item.
+- The photo crop tool now appears on top of the viewer and is easier to use, with the caption and category controls centered below the image.
+- Job and equipment files now use the same shared gallery, making photo features consistent across the app.
+- Improved AI and upload workflows for files, including cropping, batch upload, and gallery actions from the new equipment files area.
+- Fixed a build issue caused by temporary package registry failures by making installs retry automatically during deployment.
+- Reduced app size by removing unused packages, which should help the app start and load more efficiently.
+
 ## v1.3.33 — 2026-09-06
 
 - Added stronger access controls for file downloads so users can only open files they’re allowed to see.
