@@ -3,6 +3,10 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.36 — 2026-09-07
+
+- Fixed a GitHub save conflict issue so changes now go through cleanly without manual overwrite steps.
+
 ## v1.3.35 — 2026-09-07
 
 - Mobile upload and equipment dialogs now fit better on phones, with scrolling that stays within the screen.
