@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.37 — 2026-09-07
+
+### Release Notes
+- Release notes now include the full set of user-visible changes since the last tag, so nothing important is missed in the published notes.
+- The notes builder now uses the detailed changelog entries, real commit subjects, and file change summary to produce more complete release notes.
+- Release notes are now grouped by area and aim to cover every visible change, rather than a short partial summary.
+### Performance & Reliability
+- Release notes generation is more reliable and complete, reducing the chance of missing changes from the latest release.
+- A live verification showed the new process captures a much fuller change list across the app, improving trust in release communications.
+
 ## v1.3.36 — 2026-09-07
 
 - Fixed a GitHub save conflict issue so changes now go through cleanly without manual overwrite steps.
