@@ -3,6 +3,32 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.38 — 2026-09-08
+
+### Photos & Files
+- Uploaded files are now fingerprinted and reused when the exact same bytes are uploaded again, so re-uploads no longer create duplicate storage or bloat the file database.
+- File galleries now show a red Duplicate badge when the same file is already attached to that job or piece of equipment, helping you spot repeats at a glance.
+- File galleries now also flag visually near-identical images with an amber Similar badge, which makes it easier to catch re-shoots, re-crops, and re-compressed photos.
+- A new Duplicates filter chip in the gallery lets you narrow the view to only repeated or similar files when checking a job or equipment record.
+- Before uploading, the app now checks whether any selected files are already on that job or equipment and warns you with a clear Skip or Add anyway choice, so you can avoid accidental duplicates.
+- PDF uploads now generate a real first-page thumbnail in the gallery, with a PDF badge, so PDFs are easier to recognize and open from the file view.
+- Clicking a PDF thumbnail now opens the PDF directly from the gallery, making document review faster from the job or equipment screen.
+### Settings & Admin
+- A new Storage report in Settings › Backup gives you a clear view of total storage use, broken down by file type, so you can understand where space is going.
+- The Storage report now highlights the largest files and shows what records are using them, which helps you find oversized items that may be worth reviewing.
+- The Storage report now shows how much storage has been saved by deduplication, so you can see the impact of repeated uploads.
+- The Storage report now counts flagged duplicate and similar files, giving you a quick sense of how much repeated content exists in the system.
+- The Storage report now includes orphaned blobs, helping you identify storage that is no longer linked to any record.
+- A new Remove orphans action in the Storage report deletes unreferenced files safely, while protecting anything still used by jobs, equipment, settings assets like logos and stamps, reports, signatures, and recent uploads under 2 hours old.
+- The storage cleanup view now helps admins spot and remove old leftover test or unused files without affecting active records.
+### Performance & Reliability
+- File uploads now reuse existing stored blobs when the same file is uploaded again, which reduces storage growth and keeps the system leaner over time.
+- Orphan-file cleanup now scans across all collections for anything still referenced before deleting storage, reducing the risk of accidental data loss.
+- The storage cleanup process now avoids removing very recent uploads, which protects in-progress work while background checks run.
+### Security
+- Storage cleanup now treats referenced assets conservatively, including settings assets such as logos and stamps, as well as reports and signatures, so important files are not removed by mistake.
+- The new storage reporting and cleanup flow helps administrators find and remove unneeded files while preserving records that are still in use.
+
 ## v1.3.37 — 2026-09-07
 
 ### Release Notes
