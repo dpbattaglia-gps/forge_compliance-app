@@ -3,6 +3,47 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.39 — 2026-09-08
+
+### Photos & Files
+- Upload photos and documents from a much larger dashed drop area in the Files screen, with the whole gallery panel now accepting drag-and-drop so it’s easier to add files.
+- See clear page-wide drag feedback across Forge: every upload drop zone now pulses as soon as you drag a file anywhere on the page, including the Documents, Reports, Incidents and Assets areas.
+- Uploads are more reliable for big batches on the Files screen: they now run three at a time, keep going if one file fails, and finish with a summary of what added successfully and what did not.
+- If a file fails to upload, you can retry just the failed items instead of starting over, with the server’s reason shown for each problem file.
+- Duplicate checks now help with re-uploads: when you try the same files again, Forge can identify items already in the system and let you skip them.
+- Delete a file directly from the photo/video viewer with the trash icon, confirm the removal, and continue browsing the next item without closing the viewer unless it was the last file.
+- Arrow-key navigation in the viewer no longer jumps away while you are typing in the caption field.
+### Video Support
+- Upload and view video files in photos and documents: Forge now accepts .mp4 and .mov files up to 100 MB.
+- Play videos inline in the desktop lightbox and on mobile, with proper video controls and seeking support.
+- Video files now show as dark video tiles with a play icon in galleries, making them easy to spot.
+- Video uploads are stored as video, not as photos, so AI review does not run on them and rerun actions are blocked for videos.
+- The upload dialog now shows video-specific cues such as a film icon, file size, and a note that videos are not AI-reviewed.
+- File pickers on mobile now accept video files too, so you can add videos from mobile screens as well.
+- Video playback works better in the viewer and on iPhone/iPad Safari thanks to support for ranged loading and inline streaming.
+### Uploads
+- Keep uploads running while you move around Forge with a new persistent upload tray in the corner, showing overall progress and each file’s status.
+- The upload tray lets you retry a failed file, retry all failed files, remove items, clear the list, or collapse the tray when you want it out of the way.
+- The tray includes a quick link back to the destination screen so you can jump straight to the job or equipment record where the files belong.
+- Your uploads now survive in-app navigation, so you can leave the page and come back without losing the batch as long as the browser tab stays open.
+- Forge warns you before leaving the page while uploads are still active, helping prevent accidental interruption.
+- Upload progress is now easier to understand during large batches, with live counts and failure summaries instead of a silent stall.
+### Jobs & Equipment
+- Job detail pages now respect the tab in the URL, so upload tray links can take you directly to the Files tab for the right job.
+- Mobile job screens now use the shared upload flow, so uploads from the mobile view also keep working in the background.
+- Equipment screens now use the same refresh flow after uploads, keeping attached files up to date there as well.
+### Admin & Settings
+- In Settings > Backup > Storage, run a duplicate sweep to scan legacy files, fingerprint them, and flag duplicate or similar files across your existing records.
+- Storage reports now surface duplicate-related counts and sweep status, including files that still need fingerprints and storage wasted by spare duplicate copies.
+- Merge duplicate files from the Storage area to repoint records to a single shared copy and delete spare blobs, helping reduce storage use.
+- Duplicate handling now respects files that are already referenced elsewhere, so reports, documents, people and settings assets are not accidentally changed.
+- Duplicates are now marked at the record level so older files can also show duplicate and similar badges in galleries after the sweep.
+### Performance & Reliability
+- Large batches no longer stop at the first bad file, which prevents the old “stalled halfway through” behavior during drag-and-drop uploads.
+- Video uploads are configured for larger files and longer transfers, improving reliability for media-heavy field jobs.
+- Upload handling is more resilient overall, with a clearer in-progress state and a safer before-leave warning while work is still active.
+- Duplicate fingerprinting and merge operations now run in the background so storage cleanup can happen without blocking normal app use.
+
 ## v1.3.38 — 2026-09-08
 
 ### Photos & Files
