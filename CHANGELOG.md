@@ -3,6 +3,30 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.40 — 2026-09-08
+
+### Photos & Files
+- You can now upload videos as well as photos on job and equipment records, including iPhone `.mov`/`.mp4` files, Android `.mp4`/`.3gp`/`.webm`, and other common formats like `.mkv`, `.avi`, and `.m4v`.
+- The upload screen now shows videos clearly with a film-style icon, file size, and a note that they are not AI-reviewed, helping you understand what’s being stored before you submit.
+- Files over 100 MB are now flagged at upload time, so you get early feedback before a large video fails.
+- On photo and file screens, video items now appear as a dedicated dark video tile with a play icon instead of looking like a broken or empty image.
+- Video attachments now open and play directly in the file viewer and mobile media viewer, so you can review clips without leaving the job.
+- If a video codec can’t be played in the current browser, the viewer now shows a clear message with an option to open or download the original file instead of displaying a black box.
+- Video playback now supports seeking and scrubbing in the viewer, so longer clips can be jumped through like normal media.
+- On mobile job details, the media grid now shows video tiles correctly, making it easier to spot clips attached to a job.
+- From the mobile Photos/Files pickers, you can now choose video files when adding media to a job or equipment record.
+### Job Records
+- Video attachments now behave as server-owned video records, so they are consistently treated as videos no matter what the browser sends.
+- AI review actions are no longer available for video files, which prevents confusing attempts to run photo AI on clips.
+- The rerun AI option now returns an error for videos in both job and equipment areas, so users are guided away from unsupported actions.
+### Mobile
+- Mobile media screens now support video playback in the same viewer used on desktop, giving a consistent experience across devices.
+- Mobile Photos/Files selection now includes video formats, so field users can attach clips directly from the app.
+### Performance & Reliability
+- Large video uploads are supported up to 100 MB, with longer server timeouts and higher request limits to make big clips more reliable to send.
+- Video files now stream with proper byte-range support, which improves playback reliability and lets browsers seek through clips smoothly.
+- Video files are served inline for in-browser playback, reducing friction when reviewing media attached to a job or asset.
+
 ## v1.3.39 — 2026-09-08
 
 ### Photos & Files
