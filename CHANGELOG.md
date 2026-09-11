@@ -3,6 +3,47 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.41 — 2026-09-11
+
+### Jobs
+- Deleting a job now starts an approval request instead of removing it right away, so the job stays usable while it waits for a decision on the Job page.
+- A red “Deletion awaiting approval” banner now appears on the Job page when deletion is pending, with options to withdraw the request, keep the job, or approve and delete it if you’re an approver.
+- The trash action is disabled while a deletion request is pending, so users can see at a glance that the job is already under review.
+- The Jobs list now shows a “deletion pending” badge, making pending removals visible from the list view.
+- Approvers now get a Job Deletions item in Approvals on desktop and in mobile Actions, with the job linked from the approval card.
+- Requesters can no longer approve their own job deletion request, and contractor managers can no longer see or decide job deletions.
+- When a deletion request is approved, the job is deleted as before, including calendar cancellations, webhook handling, and audit history that records who requested the deletion.
+- When a deletion request is rejected, the job stays in place and the requester gets the rejection reason.
+- Requesters and approvers can withdraw a pending job deletion request from the Job page or through the approvals flow.
+### Approvals & Actions
+- The Actions hub now correctly includes service reports that were uploaded from the office or mobile and are still under review, so report approvals no longer disappear from Actions, desktop Approvals, or the dashboard “Reports pending” tile.
+- Actions now serves as the one place to see everything needing attention, including training and policies, job-required gaps, your own tickets and renewals, your own rejected reports, team competency expiries, approvals for certs, new users, email changes, service reports, supplier insurance, and approved reports that still need to be sent.
+- Personal Actions now includes rejected service reports you uploaded, with the rejection reason, so you can jump back to the related job from “For you.”
+- For people with Service Reports write access, Actions now also shows approved reports that have not yet been sent to the client, under “Your team.”
+- On the desktop Approvals page, Job Deletions now appears as its own approval group, with a disabled approve action on your own requests and a link back to the job.
+- On mobile, the Actions approvals list now includes job deletions alongside the other approval types.
+- The Actions badge count now includes the new report items as well as the expanded approval coverage.
+### Service Reports
+- You can now upload a revised version of a service report while it is still under review, so you can correct it before it is approved.
+- The same “Upload revised version” option is now available from the desktop Job page, the Report Review sheet, and the mobile Job page.
+- Rejected reports still show “Upload corrected version,” keeping the fix-up flow clear.
+- Reports in the old revoked state no longer show the re-upload option, since revoked reports are reopened as under review instead.
+### Photos, Videos & Files
+- Video thumbnails now show a real poster frame instead of a generic tile, making galleries easier to scan on desktop and mobile.
+- Video poster frames are generated from the clip itself and cached like other thumbnails, so the first view is quick and repeat visits are faster.
+- When a video can’t be decoded for a poster frame, the app now remembers that result and stops retrying, which avoids repeated delays and speeds up gallery loads.
+- In file galleries, video tiles now show the poster under the play button when available, and fall back to the dark play tile when it isn’t.
+- In the lightbox, videos now use a poster image while the player loads, which makes opening clips feel smoother.
+### Mobile
+- The mobile Job page now supports uploading a revised report while it is still under review, matching the desktop workflow.
+- Mobile Actions now includes the new Job Deletions approval items, so approvers can handle deletion requests from the phone.
+- Mobile gallery video tiles now use the new poster-frame thumbnails, giving media a clearer preview on smaller screens.
+### Performance & Reliability
+- Video thumbnails now use a bundled ffmpeg-based poster generator, which removes the need for a system ffmpeg package and makes video preview generation more reliable in the app’s runtime.
+- Poster frames are cached in the same thumbnail pipeline as photos and PDFs, reducing repeat processing and speeding up gallery browsing.
+- Undecodable videos are flagged once so the app does not keep reprocessing the same failed clip on every gallery load.
+- Approval routing now correctly treats both submitted and under-review reports as pending, preventing missing approval work in the queue and dashboard counts.
+
 ## v1.3.40 — 2026-09-08
 
 ### Photos & Files
