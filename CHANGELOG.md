@@ -3,6 +3,21 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.42 — 2026-09-14
+
+### Service Reports
+- On a job’s approved report card, you can now manually **Mark as sent** for reports emailed outside Forge or sent before the job was tracked here, so the report no longer stays stuck in “approved, not sent.”
+- From the same report card, you can also **Mark not sent** when a send failed; the report moves back to the “approved, not sent” queue in Actions so it can be handled again.
+- When marking a report as sent, you can add the real send date, choose recipients, and leave a note so the report history reflects what actually happened.
+- The report status now shows a **MANUAL** indicator when sent outside Forge, along with who made the change, when it happened, and any note for a clearer audit trail.
+- Manual sent/not sent changes are now written into the report’s send log and audit history, so support and admins can see how the report was handled later.
+### Admin & Settings
+- In **Settings › Job Status**, admins can now control who is allowed to manually mark service reports sent or not sent, making the feature available to office managers or other roles when needed.
+- The new report-sent override setting is visible to the app so the job page only shows the manual action buttons to people who are allowed to use them.
+### Performance & Reliability
+- Attempting to mark a report as already sent or already not sent now returns a clear validation error, helping prevent duplicate status changes and keeping report status data consistent.
+- Marking a report not sent now requires a note, which improves traceability and reduces accidental status reversals.
+
 ## v1.3.41 — 2026-09-11
 
 ### Jobs
