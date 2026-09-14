@@ -3,6 +3,49 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.43 — 2026-09-14
+
+### My Actions
+- The desktop sidebar now shows **My Actions** instead of **My Training**, giving office users one place to see everything that needs their attention.
+- The **My Actions** page now groups items into **For you** and **Your team**, so it’s easier to find what you personally need to finish versus what you need to review for others.
+- On the **My Actions** page, you can now see rejected service reports you uploaded, tickets and licences needing approval or about to expire, onboarding items, job-required compliance gaps, company insurance gaps, and policies and training still to complete.
+- Managers and approvers now get a clearer **Your team** view on the **My Actions** page, with approvals grouped by type, approved-but-unsent reports, and team tickets that are expiring or already expired.
+- Count chips on the **My Actions** page now show how many items are open in each area, with an overall **N open / All clear** summary at the top.
+- Completed training is now tucked into a collapsible section on **My Actions**, so the page stays focused on unfinished work.
+- Links from grouped approvals now take you to the **Approvals** page and jump straight to the matching section, making review faster.
+- Team ticket items now link into **Users** with the right person highlighted, so managers can act on them more quickly.
+- The old **My Training** route now redirects to **My Actions**, so existing bookmarks and links still work.
+### Service Reports
+- When reviewing a report, you can now see whether the uploader agreed or disagreed with each AI finding, helping reviewers understand the uploader’s perspective before making a decision.
+- The **Review & sign** screen now includes an uploader summary line showing how many AI claims were agreed with versus disputed.
+- Report history now shows manual send changes more clearly, including reports that were **marked sent manually** or **marked not sent**, with the note, recipients, and send details preserved in the timeline.
+- Manual send and not-sent entries are now shown in chronological order alongside real email sends in the **History** drawer, so the full report trail is easier to follow.
+### Mobile
+- On the mobile job page, users can now upload a service report directly from the job, instead of needing to switch back to desktop.
+- PDF report uploads on mobile now run the same AI proof-check flow as desktop, so mobile users can review findings before submitting.
+- While the proof-check is running on mobile, the job page shows a banner and lets the uploader close the dialog and get notified when the review is ready.
+- Mobile uploaders can now reopen a pending proof-check from a notification link and continue from the job page.
+- After the AI proof-check finishes on mobile, users can tick agree/disagree against each finding, then submit the report, submit without waiting, or cancel the upload if they need to fix the file first.
+- Revised-version report uploads on mobile now also use the proof-check flow, keeping the experience consistent for resubmissions.
+- Non-PDF uploads on mobile continue to submit directly, so simpler file types still move through quickly.
+### Photos & Files
+- Uploading a report now includes a safer pre-submission check that gives users time to review AI findings before the report is sent.
+- If a report upload is cancelled during the proof-check, the uploaded file is now discarded so unfinished uploads do not linger.
+### Notifications
+- Users now receive an in-app and push notification when a background report proof-check is ready, making it easier to return and finish the upload.
+- Notification links now open the correct report check on mobile, so the action takes users straight back to where they left off.
+### Approvals
+- Approval items are now grouped by type on the **My Actions** page, making it easier to jump into the right kind of review.
+- Clicking an approval group now takes approvers to the **Approvals** page with that group highlighted and scrolled into view.
+### Performance & Reliability
+- Report AI proof-checks now run in the background instead of holding the browser open, which avoids long waits and reduces timeout failures during large or slow LLM checks.
+- Users can now close the proof-check dialog while the AI runs and come back later, instead of being forced to wait on the same screen.
+- If a report is submitted before the proof-check finishes, the result is now attached later when it becomes available, so users do not lose work.
+- Re-running a proof-check on the same uploaded file now supersedes the previous check, keeping the latest review attached.
+- The report proof-check flow now exposes clearer error details, including a log reference when something goes wrong, which should make support easier.
+### Security
+- The report proof-check now stores uploader agreement and disagreement marks with the report, so review decisions keep a fuller audit trail of what was checked and how the uploader responded.
+
 ## v1.3.42 — 2026-09-14
 
 ### Service Reports
