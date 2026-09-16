@@ -3,6 +3,28 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.44 — 2026-09-16
+
+### Sign-on
+- The sign-on page now uses a compact sticky mobile header and safer top/bottom spacing, so the logo stays clear of the iPhone status bar and the footer no longer sits under the home indicator.
+- On the Sign-on screen, if Android Chrome reloads the page after opening the camera, your sign-on progress is now restored automatically instead of being lost.
+- Sign-on now shows a “Welcome back” message when it restores a saved in-progress session, so users know they can carry on where they left off.
+- The risk-photo picker on Sign-on now lets Android users choose either Camera or Gallery, instead of forcing camera capture only.
+- Sign-on photos are now reduced in the browser before upload, which helps large camera images upload more reliably on mobile and weaker connections.
+- Upload errors on Sign-on are now shown as clear, specific messages, so users can tell whether the problem was an empty camera file, a file that was too large, an expired session, a timeout, no connection, or a server-side issue.
+### Photos & Files
+- Photo and file uploads across the app now compress large images before sending them, helping reduce failed uploads and making uploads faster on mobile.
+- The upload tray now shows clearer progress and failure reasons, so users can see what happened without guessing.
+### Mobile
+- Mobile upload handling is more resilient on Android, especially when the camera app interrupts the browser and returns to the app.
+- The app now handles common Android camera-return failures better by keeping upload state and surfacing the real error instead of silently losing the file.
+### Performance & Reliability
+- Large camera images are now resized client-side before upload, which lowers memory usage and improves reliability on devices with limited resources.
+- Upload failures now produce more useful diagnostics for support and troubleshooting, including the file size and the type of failure.
+- The app now warns more clearly when uploads fail, making intermittent network issues and server rejections easier to spot and recover from.
+### Security
+- Sign-on progress is stored only for the current job session and is cleared when signing out or restarting the sign-on flow.
+
 ## v1.3.43 — 2026-09-14
 
 ### My Actions
