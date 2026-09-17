@@ -3,6 +3,40 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.47 — 2026-09-17
+
+### Mobile & Camera
+- Take photo now opens Forge’s in-app camera on supported phones, giving a live preview with capture, retake and use controls instead of launching the phone’s camera app. This avoids the Android issue where the camera app could return an empty file after Chrome was killed, so photos are much more reliable on the Sign On screen, the risk photo flow, sign-on job files and the mobile job detail page.
+- When the device or browser doesn’t support camera access, the photo flow falls back to the standard phone camera/file picker so users can still attach an image instead of being blocked.
+### Review & Proof Check
+- The Review & sign screen now uses a split-pane layout with a draggable divider between the PDF and AI panels, and the divider position is remembered for each user so the layout reopens the way they left it.
+- Double-clicking the divider resets the review layout back to its default balance, making it easy to recover from an awkward panel size.
+- The PDF viewer area now keeps a proper bounded scroll region in both single-document and compare mode, so later pages remain reachable and stamp placement works reliably again.
+- The signature reset control now floats in the top-right corner of the PDF pane with hover help, so reviewers can quickly move a misplaced signature back into position without hunting through the page.
+- The Related photos & files strip on the review screen is now collapsible and remembers its state, giving more room to the PDF when needed.
+- Compare mode now includes a Sync scroll toggle, turned on by default, so both PDFs stay aligned page-for-page while reviewing changes.
+- The review header now keeps the status, filename and Upload revised version action together on one line, making the document state and upload action easier to scan at a glance.
+### AI Review Panel
+- The AI panel has been streamlined so the reviewer sees a clearer scoreboard row with issues, contradicted, unsupported and verified counts, helping them understand the overall review status faster.
+- Run options are now tucked behind a settings button, reducing clutter and leaving more room for the findings list and document preview.
+- AI findings are now shown in a more compact format that clamps each item to two lines, with a more · suggested fix link when a finding needs expansion.
+- Flagged claims are now shown first in the AI panel, so the items that need action are easier to find and work through.
+- Verified claims are now hidden behind a N verified chip, which keeps the list focused on unresolved items while still making the checked claims available when needed.
+- The pre-check dialog uses the same streamlined review layout, with verified claims tucked behind the verified chip and a reviewed count that reflects only findings, corrections and flagged claims.
+### Photos & Files
+- You can now select multiple photos in the gallery by dragging a marquee across thumbnails, which makes bulk selection much faster than clicking each item one by one.
+- The gallery marquee selection supports Ctrl/Cmd additive selection, so users can build up a selection in multiple passes without losing what they already picked.
+- Shift-click range selection is now supported in the gallery for faster selection across a run of photos.
+- Selected photo cards now show an orange highlight ring, making it obvious which items are included in the current selection.
+- While dragging to select, the gallery suppresses the bulk action bar to avoid layout jumping, so the selection experience stays smooth and predictable.
+- A helper hint has been added above the gallery grid to make the new selection behavior easier to discover.
+### Templates & Settings
+- The document template token panel is now wider and lets tokens wrap instead of truncating, so long field names and example expressions are easier to read and copy when building templates.
+### Performance & Reliability
+- Review and proof-check scrolling is now stable again after the layout change, so the PDF pane no longer loses its scroll container in normal mode.
+- Stamp placement and dragging were verified in both single and side-by-side review modes, improving confidence that later-page signatures and annotations remain usable.
+- The camera flow avoids relying on the Android OS camera handoff that could produce a zero-byte file, which improves reliability for photo capture on affected devices.
+
 ## v1.3.46 — 2026-09-17
 
 ### Proof-check
