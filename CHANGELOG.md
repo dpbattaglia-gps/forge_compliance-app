@@ -3,6 +3,35 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.48 — 2026-09-17
+
+### Photos & Files
+- The related photos and files panel now has a clear Show/Hide control with a more obvious orange bar and chevron, making it easier to see when the panel is open or closed.
+- You can now choose where related photos appear in the report workflow: under the report, under the AI proof-check, or in both places, using the picker on the photos bar.
+- Choosing Both now shows one continuous full-width photo panel instead of duplicate panels, so the same photos stay available without wasting space.
+- The photo panel now remembers your preference in the browser and uses the same setting in both Review & Sign and the pre-upload proof-check.
+- The photos panel now keeps a minimum visible height when shown in grid mode, so it does not collapse into a thin sliver when the AI panel is tall.
+- Photo tiles, photo pickers, and emailed attachments now show clearer photo labels built from the tag, equipment, and note instead of relying on the original camera filename.
+- Photos now also show a second line with the worker and date, making it easier to identify the right image at a glance.
+- In the email attachment list, photos now appear with a thumbnail plus the clearer label and smaller filename, so recipients can identify attachments faster.
+### Review & Sign
+- The PDF toolbar now floats in the viewer corner with zoom out, zoom percentage, zoom in, fit to width, and fit to page controls, giving reviewers quicker control over how the report is displayed.
+- Compare and Reset signature actions are now grouped with the PDF review controls, making the review/sign workflow easier to use from the same toolbar.
+- The PDF and AI panel now start aligned at the top, so the page feels cleaner and more balanced when reviewing a report.
+- Findings that are dismissed now sink to the bottom in a greyed-out state, so the most important unresolved items stay front and center.
+- When every finding has been handled, reviewers now see a clear completion banner, making it obvious that the report is done.
+- Cleared findings now move into a collapsible bin with a Re-open action, so reviewers can review or undo decisions without losing track of what was cleared.
+- Clicking a photo-related item in review now keeps the chosen photo label consistent with the new photo naming format, making attachments easier to match to findings.
+### Pre-upload Proof-check
+- Marked findings, answered claims, and answered corrections now sink into their own cleared-item bins, keeping the active checklist easier to scan.
+- Cleared proof-check items remain editable in the bin, so reviewers can still adjust decisions after clearing them.
+- When all checks are cleared, the proof-check screen now shows a clear ready-to-submit banner, making the next step obvious.
+- The same photo placement options used in review now also apply in the proof-check dialog, so teams can keep photos where they are most useful.
+### Performance & Reliability
+- The related photos panel now expands to use the space the AI section leaves available, helping the PDF remain as tall and readable as possible.
+- The report review and proof-check screens now keep photo placement and collapse state in sync more reliably, so the chosen layout stays consistent while you work.
+- The new cleared-item bins help reduce clutter in both review and proof-check flows, making long reports easier to work through without losing context.
+
 ## v1.3.47 — 2026-09-17
 
 ### Mobile & Camera
