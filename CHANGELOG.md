@@ -3,6 +3,33 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.46 — 2026-09-17
+
+### Proof-check
+- The proof-check dialog now uses a wider two-pane layout, so uploaders can review the PDF and the AI checks side by side before submitting for approval.
+- The left side of the proof-check screen now shows the uploaded PDF with zoom controls, making it easier to inspect the report while you work through the findings.
+- The proof-check screen now includes the related job and equipment photos in a shared strip beside the document, helping you confirm evidence without leaving the page.
+- The right side of the proof-check screen now shows AI findings, claim checks, and suggested corrections together, so uploaders can review everything in one place.
+- Non-PDF uploads now show a clear note in the proof-check screen telling you to open the file separately.
+### Review & Sign
+- Review & sign now includes a Compare versions button when earlier PDF versions exist, letting approvers switch between a previous version and the current one.
+- When comparing versions in Review & sign, the document pane splits into Previous and Current so changes are easier to check before signing.
+- The signature placement area now re-fits properly when switching versions, so signing stays accurate even as the document view changes.
+### AI Review Coverage
+- The proof-check screen now lets uploaders mark every AI item, not just the claim-by-claim statements, so the review can be completed more consistently.
+- Findings now have thumbs up/down marking for relevant or not relevant, helping uploaders confirm whether each AI result applies.
+- Suggested corrections now have thumbs up/down marking for will apply or not needed, making it easier to confirm whether the AI edits should be used.
+- Claim statements still support agree/disagree marking, so all AI review items can now be handled in the same flow.
+- The proof-check footer now shows progress as “n of N AI items reviewed,” so uploaders can immediately see how much is left to do.
+- Review & sign now shows an uploader review banner with the number of marked items and the agree/disagree split, so approvers can tell at a glance whether the proof-check was completed.
+- The review banner now turns red when nothing was marked, helping approvers spot an incomplete uploader review before approving.
+- When the AI check is rerun automatically, Review & sign now shows that the uploader was not marked manually, so approvers can distinguish an auto-check from a completed upload review.
+- Reviewers can now see an uploader badge beside each finding, making it easier to tell which AI items were covered by the uploader.
+- Review & sign now includes a collapsible Suggested corrections section, so approvers can review AI edits that were previously missing from the screen.
+### Performance & Reliability
+- The PDF page renderer has been rebuilt for the proof-check and review flows, improving consistency between the upload and approval screens.
+- Signature placement now survives switching between previous and current versions, reducing the chance of losing work while comparing report history.
+
 ## v1.3.45 — 2026-09-17
 
 ### Report Reviews
