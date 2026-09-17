@@ -3,6 +3,63 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.45 — 2026-09-17
+
+### Report Reviews
+- On the job’s report card, revised reports now show a clearer revision history line with the revision number, who revised it, when it was revised, whether it is awaiting review, who last rejected it, and who originally created it.
+- On the report card, users now see live AI review status tags such as “AI re-check running” and how many earlier issues have been rectified.
+- When a revised PDF report is uploaded from the job’s report flow, the app now automatically re-runs the AI check if AI is enabled and no earlier pre-check was attached, so reviewers do not have to start that again manually.
+- In Review & sign, revised uploads now include a “Previous issues” section that shows each earlier issue and whether it was rectified, still present, or unclear, making it easier to see what changed since the last rejection.
+- Re-uploading a revised report now clears stale AI findings and check status so the new revision is reviewed cleanly.
+### Approvals & Sign-off
+- In Approvals and on mobile Actions, service reports now only appear for people who actually have the “Can approve & sign” permission, which removes the phantom approve option that would previously be rejected by the backend.
+- The action for reports is now clearly labeled “Review & sign” and opens the report’s signing dialog directly, instead of sending users to an approval path that could not be completed.
+- Self-approval is still allowed where your account permissions permit it.
+### Photos & Files
+- On sign-on and mobile job screens, photo and file picking is now split into separate camera and gallery choices, so Android users can choose the direct camera path or browse files without getting stuck in the wrong picker.
+- On mobile job pages, camera capture and gallery upload are now shown as separate actions for a smoother upload flow.
+- Gallery uploads now accept multiple files at once and send them through in sequence, making it easier to add several job files in one go.
+- Files attached from the public sign-on flow are now treated as field-uploaded files, which means they can be managed later instead of being locked away as office-only uploads.
+- From Job Detail and Equipment Detail, files can now be deleted even if they came from the field, so managers are no longer blocked by the file source.
+- The file gallery now supports bulk selection, including a Select all control and a Delete N action, so large cleanup jobs are much faster.
+- Bulk file deletion is now available from both job files and equipment files, letting users remove multiple files in one action instead of deleting them one by one.
+### Template Tokens & Doc Templates
+- Doc templates now support equipment-based tokens, so templates can pull equipment type, OEM, model, serial, rating, site, location, client, notes, and custom specification fields directly from the equipment record.
+- Template tokens can now use custom spec labels and keys, which makes it easier to reference site-specific equipment fields without hardcoding them.
+- Equipment tokens now merge the register record with the job’s equipment item, giving templates access to the most complete equipment data available.
+- Template fields can now include simple arithmetic, so users can build calculated values directly inside a token when generating documents.
+- Unresolved calculation or token values are left in place instead of being blanked out, making it easier to spot missing data before a document is used.
+- The Settings > Doc Templates area now includes a grouped token catalog with copy-to-clipboard support, helping admins find and insert the right token faster.
+### Mobile & Sign-on
+- The sign-on page now offers a direct camera option for photo capture, alongside a separate gallery option, instead of forcing Android users into the wrong file chooser.
+- On mobile job detail screens, users now have clearer Camera, Gallery, and Files actions for attachments.
+- The mobile actions area now follows the same report review and sign flow, reducing confusion between viewing and signing.
+### My Training
+- If the My Training page fails to load, users now see a visible red error message with the status code and a Retry button instead of the page quietly hiding the problem.
+- The training page now handles job and company gap lookup failures more safely, so one bad record no longer hides the rest of the training list.
+### Backup Health & Cluster
+- Backup health now uses a stable server identity instead of the Docker container hostname, so the same server no longer appears as multiple fake rows after upgrades.
+- Ghost backup rows now collapse into the real server row automatically, keeping the latest successful backup while removing stale duplicates and old trackers.
+- In the Servers/cluster backup health view, each row now shows a friendly label and clearly marks the current server, making it easier to spot the active node.
+- On standalone installs, the current server is now correctly recognized in backup health instead of being treated like a missing node.
+### Landing & Links
+- The Welcome page now includes a GitHub link in the top navigation, giving users a quick way to find the project releases.
+- The Welcome page footer now also includes a GitHub Releases link next to the portal link, so release notes are easier to find from the landing page.
+### Performance & Reliability
+- Static assets are now cached more aggressively in the web layer, which helps pages load faster for repeat visits.
+- The app shell, service worker, and manifest are now served without caching so users get the latest version reliably after a deployment.
+- File uploads are now streamed more efficiently through the web server, improving upload behavior for larger files.
+- The server proxy now avoids unnecessary request buffering, which helps reduce upload delays and memory pressure.
+- The backend image now starts with a single Uvicorn worker by default, preventing duplicate background loops from running on the same server.
+- A redundant backend curl dependency was removed from the image build, reducing container overhead.
+- In the app’s backend code, unused imports and placeholder-style string issues were cleaned up, reducing noise and helping keep the codebase healthier.
+### Admin & Settings
+- The Edit Personnel dialog is now wider and lays out fields more cleanly on larger screens, making it easier to edit staff details.
+- Certification rows in the personnel editor now stack properly on smaller phones, improving usability on mobile devices.
+### Security
+- The web server now hides version details from responses, reducing unnecessary exposure of server information.
+- Cloudflare Access sign-out behavior is now better understood for admins: signing out ends the Access session, while Microsoft sign-in on managed Windows devices may still re-authenticate automatically because of device SSO.
+
 ## v1.3.44 — 2026-09-16
 
 ### Sign-on
