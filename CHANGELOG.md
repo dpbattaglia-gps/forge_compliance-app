@@ -3,6 +3,61 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.49 — 2026-09-18
+
+### Jobs
+- The Send Service Report screen now uses a cleaner two-column layout, so To, Cc, Bcc, Subject and message fields are easier to work with on desktop and still fit well on smaller screens.
+- Related photos and files are now shown as a thumbnail tick-grid on the Send Service Report screen, making it much easier to choose the right attachments at a glance.
+- You can now include or remove attachments directly from the Send Service Report screen, with clearer counts and a compress option for sending smaller files.
+- Jobs that have had a report sent now stay at Works Complete and show an awaiting invoice status until they are marked invoiced.
+- A new Mark invoiced action on the Job Details screen lets you record that an invoice has been created, including an optional invoice reference.
+- Jobs list now shows awaiting invoice and invoiced badges so it is easier to spot which jobs still need billing.
+- The Job Status tab now includes an invoicing section, giving admin and office users a central place to manage the new close-after-invoicing flow.
+- The report-sent step no longer closes the job immediately when invoicing is required, so teams can finish billing before the job is marked closed.
+- Manual closing is now blocked until the job has been marked invoiced when the invoicing requirement is turned on, helping prevent jobs being closed too early.
+- Administrators can now choose whether a job must be invoiced before it can be closed, with this setting enabled by default for new behaviour.
+- There is now a new automation for when a job is marked invoiced, allowing jobs to move to Closed automatically after invoicing.
+- Existing installs are affected by the new invoicing gate, so report sent alone no longer closes the job unless that requirement is turned off in settings.
+### Webhooks & Automations
+- New job webhooks now fire when a service report is sent, when a job is marked invoiced, and when that invoiced mark is removed.
+- The job report sent webhook now includes the job snapshot and invoicing details, making it suitable for connecting to accounting tools like Xero to create an invoice.
+- The invoiced and uninvoiced webhooks now include invoice reference and who changed the status, so downstream systems can reconcile billing changes more easily.
+- The job snapshot used by job webhooks now includes job type and invoicing fields, giving integrations more complete context.
+- The Webhooks settings screen now lists the new invoicing-related job events.
+### Admin & Settings
+- A new setting in Job Status lets you require invoicing before closure, giving offices better control over job lifecycle rules.
+- The Job Status settings screen now includes the new invoiced-to-closed automation option alongside the invoicing requirement.
+- Webhooks settings now expose the new job invoicing events so they can be used without custom backend setup.
+### Popup & Dialog Experience
+- Dialogs now fit within the screen height, with the title and action buttons staying visible while only the middle section scrolls.
+- Popup content can no longer be clipped at the edges as easily, making forms and pickers more usable on smaller laptops and phones.
+- Several larger dialogs were widened to better fit their content, improving layout for forms, pickers and detail screens across the app.
+- The photo upload dialog now uses the improved dialog spacing, so the content feels cleaner and less cramped.
+- The iOS install card now uses the updated dialog layout without extra padding, improving presentation in that popup.
+### Serviced Equipment
+- The Add Job Equipment dialog now uses the updated larger popup sizing, making equipment entry easier on smaller screens.
+- Equipment merge, equipment edit and bulk reminder dialogs now open wider to reduce clipping and improve readability.
+### Clients, Assets, Suppliers & Documents
+- The Client edit screen now uses a wider dialog layout, making client details easier to view and edit.
+- The Asset dialog now opens in a wider layout, improving space for asset details.
+- The Supplier dialog now uses the improved wider popup sizing for easier editing.
+- The Documents bulk edit dialog now has a wider layout, which makes bulk changes easier to review before saving.
+### Training, Users, Incidents & Attendance
+- The Take Training dialog now opens wider, making training assignment details easier to manage.
+- The Assign Training dialog now uses a wider popup layout, improving usability when assigning courses.
+- The Invite User dialog now uses a wider layout, helping administrators review invitation details more easily.
+- The Incident detail dialog now has more horizontal space, making incident information and actions easier to read.
+- The Attendance detail dialog now opens wider, improving visibility of attendance information.
+- The Users page dialogs now benefit from the improved popup sizing, reducing cramped layouts when managing users.
+### Jobs, Photos & Mobile
+- The photo upload popup now uses the improved dialog layout, helping mobile and desktop users see more of the upload workflow.
+- The Jobs and related job detail screens now benefit from the new popup sizing rules, reducing the chance of form fields being cut off.
+- The in-app photo upload flow was included in the latest reliability checks to make sure camera-captured files upload correctly on mobile devices.
+### Performance & Reliability
+- Dialog performance and usability were improved by changing popup scrolling so only the center section moves, which reduces awkward clipped content in busy forms.
+- The updated popup sizing rules reduce overflow issues across many screens, making the app more reliable on smaller displays.
+- The Send Service Report flow was tested across desktop and phone sizes to verify that the redesigned layout remains usable on both.
+
 ## v1.3.48 — 2026-09-17
 
 ### Photos & Files
