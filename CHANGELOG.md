@@ -3,6 +3,41 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.50 — 2026-09-21
+
+### Invoicing
+- Added a new Invoicing permission in Access Control so administrators and in-house managers can be allowed to see invoice status and details, and separately granted the ability to mark jobs invoiced and edit pricing.
+- On Jobs and Sites, invoice information is now hidden unless you have Invoicing access, so sensitive billing details are only shown to the right users.
+- The Jobs table now has its own Invoice column, making invoice progress easier to scan at a glance.
+- Job rows now show clearer invoice states such as none, awaiting, drafted and invoiced, with a more detailed view showing sent, paid, due, total and Open in Xero when that data has been supplied.
+- On Job Details, invoice information is now shown only to users with permission, helping keep the screen cleaner for everyone else.
+- Mobile job list and job detail screens now also respect Invoicing access, so invoice status appears consistently across desktop and mobile.
+- My Actions on both desktop and mobile now includes a “Jobs awaiting invoice” view, helping invoicing users find work that still needs billing faster.
+- Marking a job as invoiced now requires Invoicing write access, so only authorized users can change invoice status.
+- If your role permissions were previously customized, you may need to enable Invoicing once in the access matrix to restore the new invoice screens and actions.
+### Task Types
+- Task Types now support invoicing pricing fields, including Xero item code, quantity mode, quantity and optional unit price, so billing can be configured per task type.
+- Invoicing-related pricing fields are now shown only to users with Invoicing access, keeping billing setup focused for the right roles.
+- Job report payloads now include invoice line items built from task types, so completed work can be passed through to invoicing systems with the right quantities.
+- Quantity calculations now use scheduled hours or days where appropriate, with a sensible fallback to the default duration, improving invoice accuracy.
+### Xero Integration
+- Job report sent data now includes invoice line items, making it possible to create draft invoices in Xero from the job’s reported work.
+- Xero status updates can now write back to Forge through the invoicing status endpoint, so invoice state can stay in sync automatically.
+- Draft invoice updates now store the invoice number only, while sent and paid statuses mark the job invoiced and can trigger the close workflow.
+- Voided invoice updates now clear the invoice status, so cancelled invoices no longer leave the job in an incorrect billed state.
+- Sent, paid, due, total and Open in Xero details are now shown only when those values exist, reducing noise on the job screen.
+### My Actions
+- Added a new “Jobs awaiting invoice” action for invoicing users on desktop, helping office teams pick up unbilled jobs quickly.
+- Added the same “Jobs awaiting invoice” action on mobile, so invoicing follow-up can happen away from the office too.
+### Documents
+- The Documents type filter now includes system-generated document types as well as catalogue items, so service reports, templates and asset documents can be found and filtered more easily.
+### Mobile
+- Mobile job list and job detail screens now follow the same invoicing permissions as desktop, so invoice information only appears for authorized users.
+- Mobile My Actions now includes the new “Jobs awaiting invoice” view, bringing invoicing follow-up into the field experience.
+### Security & Access Control
+- Access to invoice details and pricing is now permission-based rather than broadly visible, reducing exposure of billing information.
+- The API now strips invoice fields for users without Invoicing access, so restricted data is protected consistently across the app.
+
 ## v1.3.49 — 2026-09-18
 
 ### Jobs
