@@ -3,6 +3,33 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.51 — 2026-09-21
+
+### Invoicing
+- On the Jobs table, Job Details screen, and mobile job page, the invoice badge now opens a full invoice editor for anyone with invoicing write access, making it easier to update invoice information without leaving the job.
+- In the invoice popup, you can now edit the invoice number, status, issued/sent/due/paid dates, total, currency, and Xero link, with blank values hidden until needed and saved values restored when you reopen it.
+- The invoice status flow now supports Draft, Sent, Paid, and Voided, and the new “Clear invoice” action marks the invoice voided/cleared from the job.
+- Changing invoice details now writes through the same invoicing status path used by Xero, so manual edits behave consistently with future connector automation.
+- From the Jobs & Sites Invoice column, Job Details Invoicing row, mobile job page, or the Edit / Mark invoiced buttons, you can now open the same invoice editor to update billing status directly from wherever you’re working.
+- When an invoice is marked Sent or Paid, the job is treated as invoiced, and once the service report is out the job can close as expected.
+- The invoice badge now refreshes to show the updated invoice number and status immediately after changes, so the current billing state is visible at a glance.
+### Notifications
+- Admin → Settings → Notifications now includes a new “invoice overdue” notification for jobs whose service report was sent but who still have not been invoiced after a set number of days.
+- The new overdue invoice nudge defaults to 7 days, and the lead time is editable in the Notifications tab so teams can set their own reminder cadence.
+- The overdue invoice notification repeats every N days until the job is invoiced or closed, helping prevent forgotten billing.
+- The notification message now includes the service number, client, site, days waiting, and whether a Xero draft exists, with a direct Open link to the job for quick follow-up.
+- A new recipient option, Invoicing users, is now available for notifications and is selected by default for overdue invoice nudges, so the right billing team members get alerted automatically.
+- Invoicing users are resolved from access control at send time, meaning anyone with invoicing read access can receive the reminder without extra manual setup.
+- The overdue invoice scan now runs automatically in the daily background expiry check, so reminders continue to be generated without manual intervention.
+- Overdue invoice notifications now dedupe per job and reporting period, preventing duplicate reminders on the same cycle while still allowing the next nudge to be sent later if the invoice remains outstanding.
+### Admin & Settings
+- In Admin → Settings → Notifications, the new invoice overdue event appears as a normal configurable notification row, so it can be reviewed and adjusted alongside the rest of your alerts.
+- The notification setup now includes the new invoicing-user recipient choice in the same place as other recipient options, making billing reminders easier to route to the right people.
+### Performance & Reliability
+- The daily notification scan now includes overdue invoice detection, so billing reminders are generated as part of the existing automated job rather than relying on a separate manual process.
+- Duplicate overdue invoice nudges are now suppressed within the same job/reporting period, improving signal quality and reducing noisy repeat alerts.
+- Manual invoice edits and automated invoice status updates now share the same backend flow, reducing the chance of mismatched billing states between the app and connected invoicing systems.
+
 ## v1.3.50 — 2026-09-21
 
 ### Invoicing
