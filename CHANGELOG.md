@@ -3,6 +3,48 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.52 — 2026-09-23
+
+### Jobs, Invoicing & Client PO
+- Added a new Client PO number field on the job form, so office users can record the customer’s purchase order with the job before work starts.
+- Added an optional PO value on the job form, letting invoicing users capture the amount to be billed against the PO.
+- In the Job Details and Invoice popup screens, PO number and PO value are now visible and editable for users with invoicing access, making it easier to confirm billing details without leaving the job.
+- Jobs sent to the client now carry the PO number through to downstream invoicing, and when a PO value is present the first invoice line is automatically set to that value with the rest zeroed out to match the PO.
+- Jobs awaiting invoice now show a red “No client PO” warning badge wherever the invoice badge appears, including the Jobs & Sites list, Job Details, and mobile job views, so missing PO information is easier to spot before invoices bounce.
+- My Actions and mobile “Jobs awaiting invoice” lists now call out jobs with no recorded PO, helping office and mobile users follow up sooner.
+- Invoicing-only fields and warnings are now hidden from users without the right permission, so non-invoicing users only see the information they need.
+### Admin & Settings
+- The admin password is now set on first create only, reducing the chance of accidental password resets; admins can still force a reset explicitly when needed.
+- Fresh installs now generate a one-time random admin password, improving out-of-the-box security for new deployments.
+- Demo login is now suppressed in production, so public demo authentication options no longer appear in live production builds.
+- CORS no longer defaults to allowing every origin, tightening API access control by default.
+- An optional setting now blocks private webhook and LLM URLs, helping prevent unsafe outbound requests when that extra protection is enabled.
+- These security-related settings are documented in the environment template, making deployment configuration clearer for admins.
+### Security
+- Anonymous sign-on uploads are now rate-limited per device, reducing abuse and improving protection for public sign-on flows.
+- Public file uploads now have additional rate limiting and related hardening applied, improving resistance to misuse.
+- Security hardening updates were applied across the app, including safeguards around admin setup, demo login, public uploads, and outbound URL handling.
+### Welcome, Login & Desktop App
+- The “Install Forge as an app” prompt now appears only for signed-in desktop users, so it no longer shows on the welcome page, login page, or public sign-on screens.
+- The live demo welcome popup now renders correctly on dark surfaces, with the header and footer matching the dialog background instead of showing a white band.
+- In-app dialogs continue to render on a white surface as intended, while the welcome/demo popup now inherits its own background for consistent appearance.
+- The app’s colour styling is now confirmed to be independent of the browser or OS dark/light theme, so the welcome page and dialogs render consistently regardless of system appearance settings.
+### My Training
+- Fixed an issue that could interfere with the My Training page loading behavior, making training content more reliable to open and update.
+### Job Capture, Sign-On & Mobile
+- The sign-on flow now benefits from the new upload rate limiting, improving reliability and protection during public device sign-on.
+- Mobile job lists and job detail views now surface invoice/PO warnings, helping field users see when a job is awaiting invoice and needs PO follow-up.
+- Mobile actions screens now include the “no client PO recorded” reminder for jobs awaiting invoice, reducing missed billing handoffs.
+### Photos, Files & Reports
+- File upload handling has been hardened to better protect public upload endpoints.
+- Camera capture and report review screens now use the updated dialog/background behavior, preventing white-on-white display issues in popup-style views.
+- PDF/report page viewing components now follow the corrected dialog styling, improving readability in overlay displays.
+### Performance & Reliability
+- Several React hook dependency issues were fixed, eliminating runtime warnings and making page loading behavior more stable.
+- The frontend build now compiles cleanly without those previous hook warnings, improving developer and release confidence.
+- Console output has been routed through a production-safe logger so unnecessary logging no longer appears in production users’ sessions.
+- A legacy job edit path now safely handles missing task and document data instead of crashing, improving reliability when opening older jobs.
+
 ## v1.3.51 — 2026-09-21
 
 ### Invoicing
