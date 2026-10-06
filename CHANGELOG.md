@@ -3,6 +3,25 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.54 — 2026-10-06
+
+### Store & Pricing
+- The welcome page now shows the current licence price more clearly, including an Early Bird sale badge, the percentage saved, a crossed-out list price, and “once-off · ex. GST” messaging.
+- The checkout dialog now displays the amount being charged so customers can confirm the price before paying.
+- Licence pricing is now driven by environment settings, so admins can update the currency, list price, sale price, sale label, optional sale end date, and tax behaviour without changing app code.
+- If the sale price is left blank, the store falls back to the full list price automatically.
+- Pricing changes on the welcome page take effect after a backend restart, so the display stays in sync with the configured sale or full-price amount.
+- Store checkout now creates or reuses the matching Stripe Price for the Forge licence product based on the configured amount, currency, and tax behaviour.
+- Checkout now refuses mismatched Stripe pricing, preventing customers from overriding the amount on the client side.
+- Payment fulfilment now rejects orders when the paid subtotal does not match the expected amount, protecting customers and the business from incorrect charges.
+- The store API now exposes the current pricing details so the frontend can present the live sale and full-price information consistently.
+### Payments & Security
+- The checkout flow now enforces price and currency matching end to end, reducing the risk of tampering or accidental mischarges.
+- The system now guards against orders being fulfilled when Stripe reports an unexpected subtotal, with mismatches marked as an amount error.
+### Admin & Deployment
+- Stripe setup tooling was updated to support the new environment-driven licence pricing model, making initial payment configuration match the live store behaviour.
+- Deployment documentation and local compose configuration were updated to reflect the new pricing and Stripe setup requirements.
+
 ## v1.3.53 — 2026-10-06
 
 ### Compliance Timeline
