@@ -3,6 +3,42 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.53 — 2026-10-06
+
+### Compliance Timeline
+- The compliance timeline now includes **Next 3 years** and **Next 5 years** views, so you can plan much further ahead from the Compliance screen.
+- Long-range timeline views are easier to read: the ruler now shifts from months to **quarters** after one year and to **half-years** after three years, helping you scan distant due dates faster.
+- Due-date pills on multi-year compliance views now show full **year/month/day** style dates, so items years apart are less ambiguous.
+### Invoicing
+- You can now attach a **PO document** to a job from the **Invoice** popup, making it easier to keep the client’s purchase order with the right invoice.
+- The Job Details **Invoicing** row now shows a **PO document** link, so invoice-related files are visible from the job record.
+- If the same PO file is uploaded again on another job, Forge now reuses the existing file instead of creating a duplicate, and shows which other job already has it.
+- When you type a PO number that already exists on another job, Forge can now offer a **Use this file** option, saving you from re-uploading the same document.
+- Removing a PO document now only deletes the file when no jobs still reference it, so shared documents are not lost by accident.
+- PO documents are now restricted to people with **Invoicing** access, so office users without that permission and signed links can no longer open them.
+### Leave Certificates
+- My Profile now has a **Leave evidence** section where you can upload a sick, carer’s or compassionate certificate as a PDF or photo, add the dates covered, and include a note.
+- Each leave certificate now has a **Copy link** action on the My Profile screen, making it easy to paste the evidence into a Clockify time-off note.
+- Leave certificate links now require a signed-in Forge user, so files stay private and are not exposed as public links.
+- Managers can now view a **Team leave evidence** list from the Personnel page, helping them check supporting documents for their team.
+- A new **Leave certificates** access control option is available in Directory, with read access for your own uploads and write access for team viewing, so permissions match how the feature is used.
+- Leave certificates are stored as restricted files and are no longer visible in the standard document library, improving privacy on the My Profile and Personnel screens.
+### Profile
+- My Profile has been streamlined into five fold-away sections — **Details & login**, **Competencies & Licences**, **Leave evidence**, **Report signing**, and **Notification preferences** — so the page fits much better on screen.
+- Long competency lists now auto-collapse on the My Profile screen, making large profiles easier to navigate.
+- Your expanded or collapsed section state is now remembered on My Profile, so the page opens the way you last left it.
+- The Competencies & Licences section now shows a count and expiry hint, helping you spot issues faster without digging through the list.
+### Mobile
+- The new leave evidence features are available on **mobile My Profile**, so field staff can add certificates from their phone as well as desktop.
+- My Profile on mobile now uses the same streamlined section layout, making it easier to find details, competencies, leave evidence and notifications on a small screen.
+- Managers can now access leave evidence from the mobile profile flow as part of the broader profile updates.
+### Security & Access Control
+- Restricted file handling has been tightened so files tagged for invoicing or leave certificates now require the right signed-in permission before they can be opened.
+- Files marked as restricted are now blocked from direct access through office bypasses and signed URLs when the user does not have the needed permission, reducing accidental exposure.
+- The PO document feature and leave certificate feature both now use permission-based access controls, so sensitive documents stay visible only to the right people.
+### Reliability & Fixes
+- A profile settings bug was fixed where toggle changes could fail under StrictMode, so profile preference switches now behave reliably again.
+
 ## v1.3.52 — 2026-09-23
 
 ### Jobs, Invoicing & Client PO
