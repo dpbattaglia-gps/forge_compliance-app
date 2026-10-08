@@ -3,6 +3,27 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.55 — 2026-10-08
+
+### Webhooks
+- Added custom webhook headers in Settings so you can send the extra auth or routing headers your endpoint expects when Forge delivers events.
+- Added optional webhook signing in Settings so outbound webhooks can be verified with a shared secret and HMAC signature.
+- When you save a webhook secret, Forge now keeps it if you leave it unchanged, or clears it only when you explicitly remove it.
+- Webhook tests now show a full, verbose breakdown in Settings: the final request URL, resolved IPs, masked headers, request body, response status, response headers, and response body up to 4 KB.
+- Webhook test results now include troubleshooting hints that help identify common causes such as Synology reverse-proxy blocks, Cloudflare, n8n authentication issues, or test URLs that are not active.
+- Webhook delivery now uses consistent request metadata, including a Forge user agent and delivery timing headers, to make outbound calls easier to trace and debug.
+- Real webhook failures in the backend are now logged for 4xx and 5xx responses, making delivery problems easier to diagnose.
+### Settings
+- The webhook setup screen now includes fields for adding multiple headers and a secret, making outbound integrations easier to configure without leaving Forge.
+- Webhook entries now show badges that indicate when headers are configured and when a webhook is signed.
+- The webhook test result panel now surfaces the new verbose request and response details directly in the Settings screen.
+### Performance & Reliability
+- Webhook delivery and webhook testing now share the same request-building path, so tests and live events behave consistently.
+- Webhook testing now resolves destination IPs and reports them back, which helps confirm where requests are actually going and whether a reverse proxy is intercepting them.
+### Security
+- Outbound webhook secrets are now masked in the UI and in test output so sensitive values are not exposed unnecessarily.
+- Signed webhook requests now include an HMAC signature based on the shared secret and timestamped body, helping receivers verify authenticity.
+
 ## v1.3.54 — 2026-10-06
 
 ### Store & Pricing
