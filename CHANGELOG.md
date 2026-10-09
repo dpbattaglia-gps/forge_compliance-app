@@ -3,6 +3,38 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.56 — 2026-10-09
+
+### Webhooks
+- Webhooks now deliver through a durable queue, so events are saved first and sent later in strict order for each webhook. If one delivery fails, that webhook’s queue pauses until it recovers, preventing out-of-order workflow triggers.
+- When a webhook endpoint comes back online, queued deliveries drain one at a time with a short pause between sends, which helps avoid flooding the destination.
+- Failed webhook deliveries now retry automatically after 1 minute, 5 minutes, 30 minutes, 2 hours, 12 hours, and 24 hours before being marked as failed.
+- Queued webhook deliveries now use the webhook’s current URL, headers, and secret, so fixing a webhook configuration lets existing queued events succeed without re-sending anything manually.
+- Webhook delivery history is now kept in the app, with the last 50 deliveries per webhook available for review.
+- Admins can now open a delivery log for each webhook to see the status, HTTP response, latency, retry count, next retry time, error hints, payload, and response details.
+- A new health pill in the webhooks list now shows whether each webhook is healthy, sending, or failing with queued deliveries, making problem hooks easier to spot in Settings.
+- Webhooks can now be marked Critical when added or edited in Settings, so important hooks raise attention faster if delivery starts failing.
+- You can now manually retry a single delivery or retry all queued deliveries for a webhook from the webhooks screen in Settings.
+- A new webhook health page endpoint powers better monitoring of webhook status from the app.
+### Notifications & Alerts
+- Webhook failures and recoveries now create notifications, so admins are alerted when a webhook starts failing and again when it recovers.
+- Webhook failure alerts now go to Administrators by default, with in-app, push, and email delivery enabled.
+- Webhook failure alerts are now marked urgent, so they bypass quiet hours and digests when immediate attention is needed.
+- Critical webhooks now alert on the first failed delivery, while non-critical webhooks alert once retries have been exhausted.
+- You now get one alert per outage, a daily reminder while the webhook remains down, and a recovery notice when service is restored.
+- A red webhook alarm banner now appears across admin pages until the outage is acknowledged, making active webhook problems hard to miss.
+- The alarm banner can be acknowledged per outage, and it re-arms if the same webhook fails again later.
+- The notifications system now supports webhook failure and recovery events, expanding the kinds of operational alerts Forge can send.
+### Admin & Settings
+- The Settings area now honors the current `tab` in the URL, making it easier to land on the right settings section directly.
+- The Webhooks tab in Settings now includes the new health indicators, delivery log access, critical toggle, and retry actions in one place.
+- Admin pages now surface webhook alarms prominently so you can see delivery issues without digging into settings.
+### Performance & Reliability
+- Webhook delivery processing now resumes after restarts or redeploys, so temporary downtime won’t drop queued events.
+- Retry processing now continues in the background after outages, helping queued webhook deliveries recover automatically once the destination is healthy again.
+- The webhook system now keeps workflows from seeing events out of order, improving reliability for downstream automations and integrations.
+- Delivery pacing between webhook sends now helps protect external systems from bursts after downtime.
+
 ## v1.3.55 — 2026-10-08
 
 ### Webhooks
