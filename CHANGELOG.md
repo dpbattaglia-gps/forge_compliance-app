@@ -3,6 +3,38 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.59 — 2026-10-14
+
+### Quotes
+- The quote builder now supports a new nested layout, so each client-facing line can contain its own itemised cost lines underneath it instead of everything living in one flat table.
+- When adding Catalogue, Custom, or Labour lines in nested mode, the new line drops straight into the selected client line, making it much easier to build quotes in the right place.
+- A client-facing details toggle has been added per quote line, so equipment, personnel, duration, and similar details can be tucked away until needed.
+- The quote builder now includes a separate “Itemised & optional lines” section at the bottom for lines that sit outside client groupings.
+- Reusable blocks inserted into a quote now bring the client line and its cost lines in together, so templates and saved structures are easier to reuse and adjust.
+- The template editor now uses the same nested quote editor experience, so templates match the way quotes are built.
+- Quote lines can now be shown in a compact two-row format or a dense single-row format, giving more room on smaller screens without needing a horizontal scrolling table.
+- The compact line layout now keeps the money information on the first row and the type, level, description, and flags on the second row for clearer scanning.
+- In dense mode, line details are available in a popover, so users can review extra information without leaving the line.
+- The line editor no longer relies on a minimum-width table layout, which helps quotes fit comfortably on common laptop and mobile screen sizes.
+- The top-right view menu now lets users switch quote layouts and row styles on the fly, so teams can trial the setup that suits them best in their own browser.
+- From the view menu, users can now show or hide description, discount/optional/SLA flags, cost, part numbers, the pricing-rules panel, and auto-open details, making the builder easier to tailor to each workflow.
+- Quote view preferences are now saved locally in the browser, so the chosen layout and display options persist between sessions on the same device.
+- A reset option has been added to restore the quote builder view settings back to default.
+- The quote header has been redesigned into a more compact form with a collapsible summary strip, freeing up space for the rest of the quote.
+- Saved quotes now open with the header summary collapsed by default, while new quotes without a client open the header for easier data entry.
+- The quote header is now much shorter on small screens, improving usability on narrow mobile and tablet widths.
+- Quote line groups now show each client line with inline title and quantity details in nested mode, making grouped quotes easier to read at a glance.
+- The same grouped-line screen now includes a “Client-facing details” toggle, so supporting information is available without cluttering the main quote.
+- The group picker issue in nested mode has been fixed, so lines can now be moved out of a client line as expected.
+- Quote totals were updated to work cleanly with the new quote line layout, keeping totals aligned with the rebuilt builder experience.
+- The quote fields and quote builder screens were adjusted to support the redesigned quoting flow and layout controls.
+### Performance & Reliability
+- The quote builder now avoids the old wide-table layout, which improves usability and reduces the need for sideways scrolling on 1366px and 390px wide screens.
+- Header space usage in the quote builder has been cut significantly, helping users see more line items and reduce vertical scrolling.
+- The nested editor and layout controls were tuned so the builder stays workable as quotes become more complex.
+### Admin & Settings
+- Quote builder preferences are now stored per browser, so each user can keep their preferred quote layout and display settings on their own device.
+
 ## v1.3.58 — 2026-10-14
 
 ### Quotes
