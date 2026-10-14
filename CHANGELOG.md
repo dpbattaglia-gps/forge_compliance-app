@@ -3,6 +3,38 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.58 — 2026-10-14
+
+### Quotes
+- Quotes now auto-number per client on the quote screen, using the client’s abbreviation when available or a derived shorthand, so each new quote gets the next available number in sequence.
+- You can still edit a quote number on the quote details screen, and the app now keeps it unique while recording when a quote has been renumbered.
+- The quote builder now supports grouped presentation lines, so related items can be bundled under a single client-facing section instead of always showing as a flat item list.
+- Quote templates can now include reusable blocks, making it easier to reuse common quote sections across different jobs.
+- New client-facing quote sections for “Response context” and “Method” can now be added in the quote editor and shown in the PDF or public quote view.
+- Quote placeholders now fill in client, site, contact, quote number, validity date, totals, device count, site count, and job details automatically in the PDF and public quote page.
+- The quote builder now lets you pick an existing client contact or add a new one directly from the quote screen, and the new contact is saved back to the client.
+- Quote expiry date shortcuts are now available on the quote screen, including 5, 7, 14, and 30 days, plus end-of-month and end-of-next-month options.
+- The quote builder layout has been adjusted so totals and other fields no longer get cut off on narrower screens.
+### Pricing & Discounts
+- Quote pricing now respects SLA discount settings more precisely on the quote screen, so labour, catalogue items, and quote lines are only discounted when all required settings allow it.
+- The default “subcontract” labour level now starts with SLA discounts turned off, helping prevent accidental discounting.
+- Grouped quote sections now calculate their own total, unit price, and line count automatically, making section pricing clearer on the quote builder.
+### Quote Attachments & PDF
+- You can now upload quote attachments from the quote screen, including PDF, PNG, and JPG files.
+- Uploaded quote attachments are stored separately for quotes and can be included with the quote package.
+- Multiple PDF attachments are now merged into the quote PDF pack automatically, so customers receive one combined document.
+- Quote PDFs now include page numbers in the footer for easier reference when reviewing or printing.
+### Quotes List & Acceptance
+- The quote accept page now reflects the updated quote presentation and numbering flow, so customers see the latest quote structure when reviewing or signing.
+- The quote builder and quote acceptance screens now stay in sync with the new quote fields and template blocks.
+### Admin & Settings
+- A new weekly quote digest can now be scheduled in pricing rules, sending quote update summaries once per ISO week at the configured day and hour.
+- Weekly quote digest emails are now limited to admins and in-house managers, and only send when email notifications are enabled.
+### Performance & Reliability
+- The quote builder and quote PDF generation have been updated to handle grouped content, merged attachments, and new placeholders more reliably.
+- Quote numbering now handles gaps and edited numbers safely, reducing the risk of duplicate quote IDs when creating new quotes.
+- The latest quote workflow changes have been fully tested across backend and frontend quote flows.
+
 ## v1.3.57 — 2026-10-14
 
 ### Quotes & Pricing
