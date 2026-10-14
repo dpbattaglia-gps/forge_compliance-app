@@ -3,6 +3,55 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.57 — 2026-10-14
+
+### Quotes & Pricing
+- Added a new Quotes & Pricing area so teams can build, price, approve, send, and track quotes from start to finish without leaving Forge.
+- Added a Quotes list with tabs for Quotes, Catalogue, Templates, Pricing rules, and Reporting, so you can move between quoting tasks from one place.
+- Added a quote builder on the new quote screen with live totals and a clearer line-by-line workflow, making it easier to assemble accurate quotes quickly.
+- Added quote templates to speed up repeat quoting on common jobs, with reusable structures that reduce rework.
+- Added a quote catalogue for parts, products, labour, services, sale items, and optional services, including fields like part number, model, manufacturer, supplier, cost, sell price, availability, lead time, and Xero code.
+- Added pricing rules for labour rates, complexity bands, margin bands, SLA tiers, bundles, multi-site and multi-device pricing, discount caps, approval thresholds, GST, quote validity, call-out fees, and quote prefixes, so pricing can match your business rules.
+- Added client pricing overrides in the Clients screen, so negotiated pricing can be managed per customer without leaving the customer record.
+- Added quote-from-job prefill on the Job Detail screen, helping users turn existing work into a quote faster.
+- Added quote reporting so managers can review quote activity and outcomes more easily.
+- Added a quote header form and totals section that make the quote summary easier to review and update.
+- Added quote line tools for selecting catalogue items and managing line details more comfortably while building a quote.
+- Added quote action dialogs so submit, approve, send, accept, decline, convert, and revise flows are more guided and easier to complete.
+- Added a public quote acceptance page with signature capture, so customers can accept a quote online with their name, title, signature, and optional selections.
+- Added quote PDF generation, so quotes can be sent as a polished document by email or shared through a secure link.
+- Added quote lifecycle tracking for draft, submitted, approved, rejected, sent, accepted, declined, converted, revised, expired, and follow-up states, giving users clearer visibility of where every quote stands.
+- Added quote history and expiry/follow-up handling, so teams can see what happened to a quote and follow up when needed.
+- Added AI-assisted price checking for quotes, giving users an advisory check on pricing before sending.
+- Added quote webhooks for sent, accepted, declined, and converted events, so connected systems can react to quote progress.
+- Added quote write-back support for external status updates, helping keep Forge in sync with other accounting or admin tools.
+- Added quote approval controls so managers and admins can review and approve quotes, with approval rules based on margin, discount, and pricing policy.
+- Added automatic discount handling so the system can apply the best eligible quote-level discount and block conflicting manual discounts where needed.
+- Added support for optional lines being excluded until accepted, helping keep initial quotes cleaner and reducing confusion for customers.
+- Added support for quote revisions and variations, so users can update quotes without losing the original version history.
+- Added support for converting an accepted quote into a job, including carrying across task types, customer PO details, and quoted value.
+### Jobs
+- Added quote conversion from the quote workflow into a new job, making it easier to turn approved work into scheduled work.
+- Added variation support on linked jobs, so changes to an existing quote can be managed against the related job.
+- Added job prefill from quotes, which reduces duplicate data entry when the quote is created from an existing job.
+### Clients
+- Added a client pricing editor in the customer dialog, so negotiated pricing can be viewed and maintained directly on the client record.
+- Extended client records to store pricing details, enabling customer-specific labour and quote pricing rules to be applied automatically.
+### Admin & Settings
+- Added role-based access for quoting, including separate permissions for quote access and quote margin visibility, so pricing detail is shown only to the right people.
+- Added quote settings in administration for pricing rules such as rate cards, margin thresholds, call-out fees, GST, validity periods, approval thresholds, and prefixes.
+- Added a Quotes group in the Webhooks settings, making quote-related event integrations easier to configure.
+- Updated job records to carry quote references and quote identifiers, so quote-to-job links are easier to manage across the system.
+### Security & Access
+- Added controlled public quote acceptance through a secure tokenized link, so customers can accept quotes without needing a Forge login.
+- Restricted quote approval so users generally cannot approve their own quotes unless they are admin, improving financial control.
+- Added permission-based visibility for quote margin information, keeping sensitive pricing detail limited to authorized users.
+### Performance & Reliability
+- Improved quote pricing calculations with a dedicated pricing engine, helping ensure totals, discounts, margins, and approvals are calculated consistently.
+- Added backend support for quote PDFs and quote workflows, reducing manual steps and making quote operations more reliable.
+- Added automated follow-up and expiry handling for quotes, so overdue quotes are surfaced without manual tracking.
+- Fixed and hardened the new quote workflows across backend and frontend, including quote creation, approval, acceptance, conversion, and reporting screens.
+
 ## v1.3.56 — 2026-10-09
 
 ### Webhooks
