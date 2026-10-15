@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.64 — 2026-10-15
+
+- Jobs & Sites: address → Google Maps (self-tested) - The Address column on Jobs & Sites is now a pin-marked link that opens the location in Google Maps in a new tab
+- The mobile jobs list does the same. Verified in the browser (7 linked rows
+- Correct Maps URL
+- `target=_blank`). - Also widened the new production CSP so the existing map embed on the Job Detail page keeps working
+- Code review — (independent reviewer): Completed with fixes including adding `tzdata` to the slim production image to preven…
+- Security audit — No critical or high severity code flaws found
+- Release notes — The generator now outputs one bullet per feature for clarity
+
 ## v1.3.63 — 2026-10-15
 
 - Line types simplified, Suppliers & Compliance settings hub, part/supplier files on quotes (agent-tested with initial fi…
