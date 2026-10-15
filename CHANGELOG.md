@@ -3,6 +3,72 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.60 — 2026-10-15
+
+### Quotes Builder
+- The quote builder now opens with a simpler default layout: separate sections with dense rows, so more of the quote fits on screen without feeling cramped.
+- The builder header is now more compact and flexible, with content-sized fields, collapsible sections, and the quote intro moved into the header area for easier editing.
+- The presentation toggle has been moved into the top toolbar, making it quicker to switch between the customer-facing view and the working view.
+- Client selection now includes a one-click create-new-client flow, so you can add a client without leaving the quote.
+- Contact selection has been simplified to one field, with support for picking an existing contact, adding a new contact to the client, or entering a one-off contact.
+- The Terms section can now be built from suggested clauses, adding them individually or all at once, which speeds up quote assembly and reduces missed wording.
+- The builder now shows an MSA status badge and an MSA check panel, helping you spot agreement issues before sending a quote.
+- Saved reusable blocks can now be edited, created, or deleted directly from the builder, making quote content easier to maintain.
+### Quote Terms & Reusable Clauses
+- A new Terms library has been added under Quotes & Pricing, giving you a central place to manage reusable clauses.
+- Clauses can now be organised with categories, trigger rules, active flags, and “always include on new quotes” settings, so the right wording appears automatically.
+- The library supports matching clauses by quote type, keywords, manufacturer, supplier, and linked catalogue items, making suggestions more relevant.
+- Clause suggestions now explain why they matched and highlight gaps, helping you choose the right wording faster.
+- You can now use AI to draft or improve clause text from a brief, pasted text, or an attached supplier PDF, while still reviewing the suggestion before applying it.
+- Clause attachments now ride along with the terms they belong to, so related PDFs are included automatically in the quote.
+- Terms entered in older quotes are now normalised into the newer combined Terms format when opened, so legacy quotes still display correctly.
+- Numbered headings in the Terms area now print in bold on PDFs and the public quote page, making longer terms easier to read.
+- Existing untouched older quotes still render their legacy terms fields on PDF and public pages, so nothing breaks for previously created quotes.
+### MSA Checks & Approvals
+- You can now upload a Master Service Agreement once and run an MSA check against saved quotes to catch conflicts, inconsistencies, duplicates, and gaps.
+- MSA results are stored on the quote and surfaced with a status badge, so approvers can quickly see whether a quote is clear, needs review, or has conflicts.
+- The MSA check now reviews the whole quote, not just the terms, including the title, intro, client lines, line items, labour, discounts, payment terms, validity, attachment names, and terms.
+- Each MSA finding now points to where the issue appears in the quote, making it faster to fix.
+- MSA uploads now support viewing metadata and deleting the uploaded agreement when it needs to be replaced.
+- The quote assistant and MSA tools now work from a compact whole-quote summary, improving the relevance of checks and suggestions.
+### Quote Assistant
+- A new Quote Assistant drawer has been added to the toolbar, giving you a chat-style helper for building quotes.
+- The assistant understands the current unsaved quote, the clause library, catalogue items, pricing rules, and the MSA summary, so it can answer questions in context.
+- It can suggest quote changes as proposals, such as adding clauses, changing line items, editing client lines, or rewriting the intro and terms, which you can preview before applying.
+- Proposals are applied one at a time, so the assistant helps without making hidden changes.
+- Conversations are saved per user and per quote session, so you can return to the same discussion later.
+- The assistant includes starter prompts and sends messages with Enter for quicker use.
+- Demo and preview handling has been added so the assistant degrades gracefully when AI is not configured.
+### Pricing & Catalogue
+- Catalogue items can now have quantity price breaks, letting you define different sell and cost prices for different volume tiers.
+- The catalogue editor now includes a price-break table, so you can set a base price and any number of higher-quantity break points in one place.
+- The catalogue list and quote item picker now show a badge when an item has quantity breaks, helping you spot tiered pricing at a glance.
+- Quote lines now re-price automatically when quantity changes, so the correct break price is applied without manual recalculation.
+- Editing the sell price now locks the line to your manual price, preventing tiers from overriding your choice.
+- You can re-apply tier pricing from the line itself, making it easy to switch back to automatic pricing when needed.
+- The pricing engine now carries tiered pricing through to saved quotes and PDFs, keeping the on-screen quote, saved data, and printed output consistent.
+- Labour can now be priced in days as well as hours, with a day treated as a fixed number of rate-card hours based on pricing rules.
+- Labour lines now display the correct quantity and unit in the quote output, so quotes read naturally for day-based work.
+### Quote Content & Layout
+- Quote client lines now use a single description field, making them easier to read and edit.
+- Client line descriptions now display as multi-line text in PDFs and public quotes, improving readability for longer notes.
+- Terms, internal notes, and attachments are now handled more cleanly in the combined terms area, reducing confusion between customer-facing and internal content.
+- The dense quote line view now exposes more columns in the View menu, so teams can choose which details matter most on screen.
+- The builder now keeps totals, discounts, and internal information visible beneath the main line area, making review easier before sending.
+### Delete & Quote Management
+- Quotes can now be deleted directly from the builder toolbar and from quote list rows, which makes cleanup faster.
+- Draft quotes and superseded quotes that were never sent can be deleted by any quotes writer.
+- Approved, sent, accepted, and other later-stage quotes can only be deleted by admins or managers, protecting important records.
+- Converted quotes cannot be deleted, preserving the source of record for downstream work.
+### PDFs & Customer-Facing Output
+- The PDF output now reflects the updated quote layout, including the new header sizing, terms formatting, and labour day display.
+- Customer-facing quote pages now render the updated combined terms and quantity pricing correctly, matching what users see in the builder.
+- Terms headings print more clearly in PDFs and on public quote pages, improving readability for customers and approvers.
+### Performance & Reliability
+- Quote rendering and pricing now stay aligned across the builder, saved quote, PDF, and public page, reducing the chance of mismatched totals or tiers.
+- Older quote data is now normalised as it loads, which helps the builder and output screens handle legacy quotes more reliably.
+- AI-based suggestions and checks now fail gracefully when AI is not configured, so users can still work without interruptions.
+
 ## v1.3.59 — 2026-10-14
 
 ### Quotes
