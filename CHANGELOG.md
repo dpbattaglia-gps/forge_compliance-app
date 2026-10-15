@@ -3,6 +3,11 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.63 — 2026-10-15
+
+- Line types simplified, Suppliers & Compliance settings hub, part/supplier files on quotes (agent-tested with initial fi…
+- Supplier types, verification audits & custom fields (agent-tested with fixes verified)
+
 ## v1.3.62 — 2026-10-15
 
 - GitHub build fix + Vite 8 / Rolldown (verified)
