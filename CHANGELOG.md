@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.61 — 2026-10-15
+
+### Quotes / Builder
+- In the quote builder’s dense row view, the edit popover now focuses on fields that are not already shown as columns, so it’s easier to find hidden details like type, description, optional, and SLA.
+- If all of the row’s fields are already visible as columns, the dense row popover now tells you that clearly instead of showing an empty or confusing menu.
+- The quantity column header now reads **Qty**, making the builder easier to scan at a glance.
+- The **Client line** column now shows a dashed **“no client lines yet”** placeholder when there are no entries, so the empty state is clearer.
+- The margin pill in the dense row view is now centered and kept on one line, improving readability in the quote builder.
+- The Assistant launcher has moved to a floating button at the bottom-right of the screen, positioned to the left of the notification bell for quicker access.
+
 ## v1.3.60 — 2026-10-15
 
 ### Quotes Builder
