@@ -3,6 +3,12 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.62 — 2026-10-15
+
+- GitHub build fix + Vite 8 / Rolldown (verified)
+- Platform update summary after agent testing (iteration 137 with verified fixes)
+- Approval gate + concise release notes - The **Approve dialog** now features an approval gate including an MSA verdict p…
+
 ## v1.3.61 — 2026-10-15
 
 ### Quotes / Builder
