@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.65 — 2026-10-16
+
+- Catalogue filters/sort/compact rows
+- Stackable Building blocks
+- Drag & drop — Users can now drop PDFs/images directly onto the catalogue item Files area (multiple at once), the supplier a…
+- Supplier contacts — Each supplier (parts or contractor) includes a Contacts section with name, role, email, phone, and a star to…
+- Live crew positions — The dispatch map displays workers signed on today as initials markers at their GPS sign-on locations
+- Supplier scorecard — A Scorecard button on every supplier row reveals quote usage stats (quotes, quoted vs
+- Quote Pack Preview — The "Pack" button on the quote toolbar and a row inside the approval dialog open the merged PDF the client re…
+- Site Map View — Jobs & Sites includes a List/Map toggle
+- Directions — Navigate button on mobile job cards, "Navigate to site" bar on mobile job detail, and "Directions from my loc…
+
 ## v1.3.64 — 2026-10-15
 
 - Jobs & Sites: address → Google Maps (self-tested) - The Address column on Jobs & Sites is now a pin-marked link that opens the location in Google Maps in a new tab
