@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.66 — 2026-10-19
+
+### Catalogue
+- Import catalogue items from CSV or Excel with flexible column matching, duplicate suggestions, and per-row create, update, or skip choices.
+- Review proposed changes before import, with bulk actions and a summary of what will be added or updated.
+- Export the catalogue to CSV or Excel, and download an import template to get started.
+- Cost fields stay hidden from users without margin access, including during export and import.
+### Quotes
+- Export the quote catalogue from the toolbar, including the new import and export actions.
+
 ## v1.3.65 — 2026-10-16
 
 - Catalogue filters/sort/compact rows
