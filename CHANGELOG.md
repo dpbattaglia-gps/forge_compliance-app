@@ -3,6 +3,19 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.70 — 2026-10-19
+
+### Quotes
+- Quotes now remember which library version each clause came from, so later library edits can be flagged on the quote.
+- When a library clause changes, quotes show an amber alert with options to update that clause, keep your wording, or update all changed clauses.
+- Updating a changed clause keeps its position and numbering in the quote.
+### Terms library
+- Knowledge entries that have not been relied on, confirmed, or created in 12 months are marked review due.
+- Review due entries can be confirmed for another year or retired from use.
+- Each review due entry is clearly surfaced in the Terms library.
+### Compliance dashboard
+- A new Quote knowledge section highlights terms that are due for review and links directly to them.
+
 ## v1.3.69 — 2026-10-19
 
 ### Quotes
