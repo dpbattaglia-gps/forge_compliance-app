@@ -3,6 +3,12 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.67 — 2026-10-19
+
+### Quotes
+- You can add a clause again after removing it from the Terms text, and the applied count and numbering update correctly.
+- “Add all suggested” and saved quotes now follow the same Terms text rule for clause state.
+
 ## v1.3.66 — 2026-10-19
 
 ### Catalogue
