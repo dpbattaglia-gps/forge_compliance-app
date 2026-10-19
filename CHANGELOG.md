@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.69 — 2026-10-19
+
+### Quotes
+- You can save a dismissed MSA finding as house knowledge with a reason and title so future quotes can reuse the explanation.
+- Quotes → Terms library now shows house knowledge entries, including their source quote and how many findings each one has explained.
+- The quote assistant and MSA checks use house knowledge to mark covered findings as explained instead of open.
+- Explained findings stay visible for audit, but they no longer block approval.
+- You can manage house knowledge entries by adding, editing, disabling, or deleting them.
+
 ## v1.3.68 — 2026-10-19
 
 ### Quotes
