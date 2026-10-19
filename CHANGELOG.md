@@ -3,6 +3,22 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.68 — 2026-10-19
+
+### Quotes
+- The clause library in Terms can now be collapsed, and your expanded or collapsed state is remembered per browser.
+- Added clauses now have an X to remove the whole clause, renumber the Terms, and drop unused attachments.
+- Quote AI failures now stay in the thread with the reason and Retry, Edit message, or Dismiss actions.
+- The quote assistant now shows how long it has been thinking, with a longer-reply notice after 45 seconds.
+### AI settings
+- Admin → AI/LLM now controls model, timeout, max output tokens, temperature, and thinking for all AI features.
+- Per-call token caps and temperature or timeout overrides were removed from quote, photo, report, and brand-voice AI.
+- Setting max output tokens to 0 now sends no cap, so the server can decide.
+- You can now check what your server allows by probing its context limit and whether your max-token cap is accepted.
+### MSA checks
+- MSA checks now run in the background with running, done, or error status.
+- The MSA panel and approval gate now show elapsed time, the last failure reason, and keep the previous findings visible while a new check runs.
+
 ## v1.3.67 — 2026-10-19
 
 ### Quotes
