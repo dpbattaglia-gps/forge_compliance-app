@@ -3,6 +3,24 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.74 — 2026-10-20
+
+### Quotes
+- Quote checks now sits below Terms and attachments as a full-width collapsible card with an MSA and price summary.
+- Terms now use a stacked layout with the clause library, terms editor, and attachments in one vertical flow.
+- Internal notes moved into the right sidebar under the margin card.
+- Autosave status now appears beside Save with clear on/off coloring.
+- Part-number and hour hints are now hidden by default, with a View menu toggle to show them.
+- Text areas in quotes now grow to fit their content.
+- You can set quote editor text size to Small, Medium, or Large.
+### Quote Versioning
+- Every draft save now creates a quote version snapshot, keeping the latest 25 unique saves.
+- Version history shows who saved each draft and lets you restore older content back into the editor.
+### Quote Descriptions
+- Each client line now includes a Description Coach to draft or improve line descriptions with AI.
+- Template-based drafting uses your quote calculations without revealing prices or hours-at-rate.
+- You can manage description templates from the coach or from the Terms library.
+
 ## v1.3.73 — 2026-10-20
 
 ### Quotes
