@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.72 — 2026-10-20
+
+### Security and access
+- Added an “API Documentation” permission to control access to Swagger, ReDoc, and the raw OpenAPI spec.
+- Admins can now open API docs from Settings → API Keys, with links shown only when they have permission.
+- Signed-out users who open API docs are sent to sign in and returned to the docs afterward.
+### Quotes
+- MSA review now shows one finding at a time with a clearer summary, reasoning, and suggestion.
+- Review findings now support dismissing or accepting, with accepted items kept blocking until the quote is changed and rechecked.
+- Reviewed findings are collapsed into a “Reviewed” list so the queue stays compact.
+- The review screen now shows progress, end-state messages, and a warning when the quote changed after the check ran.
+
 ## v1.3.71 — 2026-10-20
 
 ### API Docs
