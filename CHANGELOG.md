@@ -3,6 +3,11 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.71 — 2026-10-20
+
+### API Docs
+- Swagger and ReDoc now load from the app itself, so API docs open correctly under the strict production security policy.
+
 ## v1.3.70 — 2026-10-19
 
 ### Quotes
