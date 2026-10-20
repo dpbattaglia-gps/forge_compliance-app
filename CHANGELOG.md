@@ -3,6 +3,22 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.75 — 2026-10-20
+
+### Quotes
+- Quote price checking now runs against live web search and shows progress while it searches and compares prices.
+- Price results appear in a side panel with online prices, source links, alternatives, and quick actions to use them as cost, sell, or optional lines.
+- Each checked line now shows which sites were searched and which pages were read.
+- The quote checks card is now focused on MSA conflict checks, with price checking moved to calculation lines.
+### MSA checks
+- Dismissed and accepted MSA findings are now remembered and reused on the next check.
+- Previously dismissed items come back closed with your reason, accepted fixes can be confirmed, and only new issues need review.
+- Saved answers are shown in a list so you can review or forget them.
+- You can reopen an auto-closed finding to make it show up again next time.
+### Settings
+- A new AI settings section lets you configure live quote price search.
+- You can add search keys, choose preferred supplier sites, and run a test to prove the search works.
+
 ## v1.3.74 — 2026-10-20
 
 ### Quotes
