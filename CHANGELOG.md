@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.73 — 2026-10-20
+
+### Quotes
+- You can now override a client line’s total, and the quote recalculates margins, discounts, and approval checks from that client-facing figure.
+- Client-line overrides stay hidden from the client PDF, acceptance page, and webhooks, and are ignored in Itemised presentation.
+- Terms clauses now stay matched when you renumber headings, change numbering style, or remove prefixes.
+- The Terms editor can preview clauses as the client will see them, with missing quote tokens flagged before you send.
+- Quote tokens now fill in automatically for AI checks, so MSA review and assistant prompts use the same client and site values the client will see.
+- MSA and assistant checks now focus on client-visible quote content and treat internal calculation issues as non-blocking working notes.
+- Draft quotes now autosave shortly after you stop typing, with a status shown next to Save.
+- The quote builder layout has been streamlined with a clearer toolbar, stepper, sticky checks panel, tabbed terms, and collapsible calculation lines.
+
 ## v1.3.72 — 2026-10-20
 
 ### Security and access
