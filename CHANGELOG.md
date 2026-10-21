@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.82 — 2026-10-21
+
+### Quotes
+- Quote titles now appear in the heading as `Quote ID — Title`.
+- You can reorder quote pack attachments by drag and drop.
+- The pack now merges PDFs in the attachment order you set, with the MSA always first.
+### AI
+- AI call logs now keep much longer raw responses and reasoning, with a clear note if storage was clipped.
+- The AI calls panel now shows character counts and whether a response was complete or cut off by token limits.
+- You can expand the AI calls panel to full height for easier reading.
+### Notifications
+- Toast notifications now appear at the bottom center, away from the main action buttons.
+- Toasts now fit their text, include a close button, auto-hide after 3.5 seconds, and show up to three at once.
+
 ## v1.3.81 — 2026-10-21
 
 ### Quotes
