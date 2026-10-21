@@ -3,6 +3,27 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.81 — 2026-10-21
+
+### Quotes
+- Labour lines now calculate from hours or days multiplied by people, so crew-based pricing is clearer.
+- Past quotes open in a docked side panel, letting you keep editing while you compare and copy from them.
+- You can choose which client line to write into from past quotes, and the current quote is excluded from the list.
+- Site and job history now opens from the quote header, showing recent activity plus reports, photos, uploads, and events.
+- Quote starter text is now managed per quote type, with a starter menu beside Introduction and a renamed Quote library tab.
+- Quote details now use a simpler layout, with a new Issued date that prints on the PDF.
+- Pricing factors now live in a single popover next to calculation lines.
+- Follow-up reminders moved out of quote details into the internal panel for approved, sent, and expired quotes.
+- Quote attachments and the company MSA now appear in one ordered pack list with the same in-pack controls.
+### Approvals
+- Quote approvals now appear in the Approvals page and My Actions, where authorised users can approve or reject them.
+### Xero
+- Approved quotes can now be lodged in Xero from the quote toolbar, with retry and re-lodge actions when needed.
+- Quote status now shows Xero lodge progress and errors until Xero returns the quote number.
+- Xero auto-lodging can now be turned on or off in Settings.
+### Webhooks
+- Pending webhook deliveries can now be cancelled from the delivery log, and the queue continues automatically afterward.
+
 ## v1.3.80 — 2026-10-21
 
 ### Quotes
