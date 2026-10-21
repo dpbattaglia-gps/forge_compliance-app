@@ -3,6 +3,17 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.83 — 2026-10-21
+
+### Quotes
+- Each quote now shows a review status pill so you can see whether it needs checking, has blockers, or is clear.
+- Use the new “Needs review” filter to focus on open quotes that still need attention.
+- Quotes now show review counts and status details like blockers, findings, or re-check needed.
+### Pricing
+- Each pricing row now shows review status so approvers can spot unresolved issues before sending or approving.
+### Labour
+- Labour items now hide the “2 days × 2 people = 4 days” hint when that hint is turned off in view settings.
+
 ## v1.3.82 — 2026-10-21
 
 ### Quotes
