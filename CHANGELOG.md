@@ -3,6 +3,28 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.78 — 2026-10-21
+
+### Quotes
+- You can now duplicate any quote into a new draft from the list or quote page.
+- Duplicate quotes get a fresh number, new validity date, and no approval or send history.
+- The duplicate keeps the quote content but creates new line and group IDs for the new draft.
+### Quote lines
+- Labour lines now support a people multiplier in the quantity.
+- Labour quantities show as people multiplied by hours or days, with totals calculated from that value.
+- The line display now explains the labour total directly under the quantity.
+### Quote builder
+- The clause library now collapses into a narrow side strip so the terms editor has more space.
+- Opening the clause library expands it to a wider panel beside the editor.
+### Approvals
+- You can now allow selected users to approve their own quotes and handle their own job-deletion requests.
+- The approval queue no longer flags those items as needing another approver when the user has that permission.
+### Settings
+- Admins can grant or remove self-approval access from user overrides.
+- These permission changes are recorded in the audit log.
+### Tooltips
+- Quote and MSA info icons now show tooltips on hover or tap.
+
 ## v1.3.77 — 2026-10-21
 
 ### Quotes
