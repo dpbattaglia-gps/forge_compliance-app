@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.79 — 2026-10-21
+
+### Invoicing
+- Added an invoicing sweep API to list jobs needing invoice checks, including open, awaiting, or all stages.
+- Added filters for invoice status, client, stale items, and recently updated invoices to narrow sweep results.
+- Added paging to sweep results so large invoice lists can be processed in batches.
+- Returned job, service, site, and invoice details needed to look up each invoice in Xero.
+- Updated invoice status writes to record when each invoice was checked.
+- Kept invoice history quiet when a sweep finds no status change.
+
 ## v1.3.78 — 2026-10-21
 
 ### Quotes
