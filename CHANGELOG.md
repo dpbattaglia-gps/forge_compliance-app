@@ -3,6 +3,26 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.77 — 2026-10-21
+
+### Quotes
+- You can now drag calculation lines to reorder them, and the order carries through to groups and the PDF.
+- Quote attachments now show a simple in-pack or internal badge, and you can switch each file between those states.
+- Internal attachments stay with the quote but are excluded from the client pack and public page.
+- Terms, attachments, and clause library content now sit under a single terms-and-attachments section with cleaner spacing.
+- The clause library now stays in a sticky side column while you edit.
+- The quote card can now collapse to a compact summary and remembers its state per browser.
+- Quote line items now support direct edits to quantity, unit price, and amount, with overrides highlighted clearly.
+- Calculation lines now use the same cleaner input styling as the quote document.
+### Mobile
+- You can now add licences and competencies from one combined list on mobile, matching desktop.
+- Mobile licence uploads now support taking a photo or choosing from files and the library.
+- Mobile cert photos can now be read automatically to prefill qualification details, certificate number, and expiry.
+- On mobile, people can now open uploaded licence documents directly from their profile or team member record.
+### Compliance Passport
+- Passport and competency records now include a View button for any uploaded document, opening the file in a new tab.
+- Managers can now access passport documents for people they manage.
+
 ## v1.3.76 — 2026-10-21
 
 ### Quote
