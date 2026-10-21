@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.80 — 2026-10-21
+
+### Quotes
+- You can save a custom quote calculation line to the catalogue from the quote builder.
+- Saved catalogue items can be added to the quote at the same time.
+- Linked calculation lines now show they’re already saved to the catalogue.
+- Quote level and unit fields are wider, so long values no longer get cut off.
+- You can reuse text from past quotes in a new quote without leaving the page.
+- Search past quotes across client lines, calculations, and intros with all words matching.
+- You can add a past match as a client line, calculation line, or copy it into the current line.
+- You can replace or append a past description directly into a client line.
+
 ## v1.3.79 — 2026-10-21
 
 ### Invoicing
