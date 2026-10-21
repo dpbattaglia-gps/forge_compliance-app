@@ -3,6 +3,28 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.76 — 2026-10-21
+
+### Quote
+- Quotes now open as a client-facing document with a cleaner, fuller-width layout that matches the final quote the customer reads.
+- You can reorder quote lines by drag and drop.
+- Quote line descriptions now expand and collapse per line, with your preference remembered.
+- Calculation lines can appear either above the quote or tucked under each client line.
+- Internal pricing details now stay in a fixed panel while you scroll the quote.
+- Discount percentage is now kept within 0–100%.
+### Quote details
+- Quote details are reorganized into clearer sections so the form follows the way you build a quote.
+- Collapsed detail chips can now show more context at a glance, including attachment summaries.
+### Response context
+- The intro message now has its own card in the quote form, with a collapsed preview and click-to-edit behavior.
+- Your editor text size preference now applies to the intro, line descriptions, terms, and internal notes.
+- A larger text size option is now available.
+### Terms & attachments
+- Attachments now appear on the quote header even when the terms section is collapsed.
+- Uploaded MSAs are now automatically added to quote packs after the quote, with an option to turn that off per quote.
+### Quote packs
+- Quote pack previews now show the MSA section and its page count so you can see the final order before sending.
+
 ## v1.3.75 — 2026-10-20
 
 ### Quotes
