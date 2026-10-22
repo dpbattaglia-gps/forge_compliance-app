@@ -3,6 +3,17 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.84 — 2026-10-22
+
+### Quotes
+- Draft quotes now save and autosave normally, while awaiting-approval quotes keep their approval unless you change core content.
+- Approved, sent, accepted, declined, and expired quotes now open in locked mode, where edits must be saved as a new revision.
+- Locked quotes now show Create revision instead of Save, and the button stays disabled until you make a change.
+- You can now reopen an approved quote as a draft from the More menu.
+- Creating a revision now carries your edits into the new draft and marks the previous version as superseded.
+- Internal notes and follow-up date still save on locked quotes, even when other content changes are blocked.
+- The follow-up column now explains that it is an internal reminder and highlights overdue follow-ups in red.
+
 ## v1.3.83 — 2026-10-21
 
 ### Quotes
