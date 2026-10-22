@@ -3,6 +3,21 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.88 — 2026-10-22
+
+### Quotes
+- Quote webhook payloads now match the client-facing quote exactly, including pricing rows, document sections, attachments, MSA details, and pack PDF links.
+- Quote webhooks now include the same payload shape across lodge, sent, accepted, declined, and converted events.
+- Public quote links can now download approved in-pack attachments and the MSA document.
+### Settings
+- Webhooks now have a shared delivery log covering every webhook, with filters for webhook, event, and status.
+- Each delivery log row shows delivery timing, attempts, and the webhook that received it.
+- You can retry or cancel individual webhook deliveries from the log.
+- Each webhook’s Log button now opens the shared delivery log already filtered to that webhook.
+### Compliance checks
+- Mark still current is now disabled when an accepted finding still needs a quote fix and re-check.
+- The button now shows the reason it is unavailable.
+
 ## v1.3.87 — 2026-10-22
 
 ### Quotes
