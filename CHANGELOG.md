@@ -3,6 +3,19 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.91 — 2026-10-22
+
+### Quotes and pricing
+- Edit in place now keeps an approved quote approved until you choose Save, and Cancel discards edits without changing status.
+- Save is disabled when nothing changed, so you can see when there is nothing to save.
+- Internal notes and follow-up dates can be edited without triggering an MSA re-check.
+### MSA review
+- Re-checks now ask for an explicit fixed, still present, or cannot tell verdict on every accepted issue.
+- Previously accepted issues can now be signed off as fixed directly from the review list.
+- Issues the review no longer mentions are cleared automatically, while still-present issues stay visible.
+### Approval and sending
+- Approve, lodge, send, and reopen no longer trigger a review re-check unless quote content changed.
+
 ## v1.3.90 — 2026-10-22
 
 ### Quotes
