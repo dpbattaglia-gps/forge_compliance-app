@@ -3,6 +3,14 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.86 — 2026-10-22
+
+### Invoicing
+- You can now assign one invoice to multiple jobs in a single update.
+- Invoice status updates can target jobs by job ID or service number, and the response now shows every linked job.
+- You can update an invoice by invoice number alone, and the change applies to every job sharing that number.
+- Invoice list results can now be grouped by invoice number, with all linked jobs returned together.
+
 ## v1.3.85 — 2026-10-22
 
 ### Invoicing
