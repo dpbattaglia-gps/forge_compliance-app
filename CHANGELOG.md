@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.85 — 2026-10-22
+
+### Invoicing
+- Jobs marked invoiced from the Invoicing screen now appear in invoice sweeps and are treated as sent invoices.
+- Turning invoiced on or off now keeps the job’s invoice status in sync across both invoicing paths.
+- Paid invoices now show as complete, alongside open and awaiting statuses in API responses.
+### API
+- Invoice sweep results now include all invoice stages in the response so users can see exactly what was checked.
+
 ## v1.3.84 — 2026-10-22
 
 ### Quotes
