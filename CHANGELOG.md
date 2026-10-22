@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.87 — 2026-10-22
+
+### Quotes
+- You can now mark a stale quote review as still current, with a required reason, without running AI again.
+- The quote review banner now offers both re-checking and confirming the current review.
+- Confirming a review records who did it, when, and why in quote history and audit logs.
+- Quote review AI now reuses a stable prompt prefix so repeated checks can hit prompt caching.
+### AI
+- The AI calls log now shows how much of each prompt was cached.
+- Settings now includes a plain-English explanation of prompt caching and how to tell when it is working.
+- Prompt layouts were adjusted across the app so large shared instructions are sent first, improving cache reuse for several AI features.
+### Service Reports
+- Report proof checks now send shared review context in a cache-friendly prompt order to improve reuse across jobs.
+
 ## v1.3.86 — 2026-10-22
 
 ### Invoicing
