@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.90 — 2026-10-22
+
+### Quotes
+- Locked quotes are now read-only, with a clear note explaining how to make changes.
+- Approved and later quote states now open in client view, with all placeholders filled in throughout the quote and terms.
+- The toolbar now uses Create revision to copy a locked quote into a new draft and open it for editing.
+- Reopen as draft is still available from the more menu for approved quotes.
+- Terms & Conditions now always open in client preview when the quote is locked.
+
 ## v1.3.89 — 2026-10-22
 
 ### Quotes
