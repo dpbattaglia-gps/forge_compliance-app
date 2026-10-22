@@ -3,6 +3,23 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.92 — 2026-10-22
+
+### Settings
+- Add custom line fields in Quote library settings, with text, number, dropdown, and tick box options.
+- Choose which line types each field applies to, and whether it appears on the client PDF.
+- Set whether a field shows by default, include catalogue items, and reorder fields by drag and drop.
+### Quotes
+- Use the new custom fields on quote lines, grouped quote sections, and catalogue item defaults.
+- Add line fields from the builder view menu and edit hidden fields from the sliders panel.
+- See client-facing line fields under quote line titles and grouped section titles in the builder.
+### PDFs and acceptance pages
+- Include custom line fields in quote PDFs as extra columns or as labels under the description.
+- Apply custom line fields to itemised, grouped, and optional line layouts.
+- Hide internal-only fields from PDFs and acceptance pages.
+### Webhooks and integrations
+- Webhook payloads now include custom line field values and their definitions for quote rows.
+
 ## v1.3.91 — 2026-10-22
 
 ### Quotes and pricing
