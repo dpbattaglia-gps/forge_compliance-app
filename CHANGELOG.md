@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.89 — 2026-10-22
+
+### Quotes
+- You can now cancel a running MSA or quote review from the quote screen.
+- Cancelling keeps the previous findings and records who cancelled and how long it had been running.
+- Quotes now show a clear cancelled state if a review is stopped.
+- Late results from a cancelled review no longer overwrite the quote.
+### Approval
+- The approval gate now includes a Cancel action for an in-progress quote review.
+
 ## v1.3.88 — 2026-10-22
 
 ### Quotes
