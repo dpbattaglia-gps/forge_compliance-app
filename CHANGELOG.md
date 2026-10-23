@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.93 — 2026-10-23
+
+### Quotes
+- Standalone titled client lines now appear in quotes, PDFs, webhooks, and the acceptance page, with any entered price included.
+- When you edit an approved quote, the send and Xero lodge actions are hidden until you cancel or save.
+- After Xero writes back a quote number, the lodge button stays available as an update action and shows the Xero number.
+- Lodge webhook payloads now include the Xero action, quote number, and quote ID so automations can create or update correctly.
+- The app now shows the Xero write-back URL in the lodge tooltip, webhooks tab, and status message to make setup easier.
+### Line Fields
+- Line field layout and client-PDF printing are now separate settings.
+- Fields can now be placed beside the line or under it, depending on the selected layout.
+- Layout choices now control where fields appear in the quote builder and in the printed PDF.
+- Each field can now be included or excluded from the client PDF independently.
+
 ## v1.3.92 — 2026-10-22
 
 ### Settings
