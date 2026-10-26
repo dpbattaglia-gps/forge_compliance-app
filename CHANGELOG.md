@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.95 — 2026-10-26
+
+### Quotes
+- Quotes now show a cleaner header with key status and accounting details as pills, with full explanations hidden in tooltips.
+- Locked quotes now offer Create revision or Revise from a small popover on the lock pill.
+- Approved quotes can now store an external accounting reference directly from the header.
+- Quote library sections are now collapsible, and your open/closed state is remembered per browser.
+- Clause library now opens by default and keeps the New clause action in its header.
+### Accounting
+- You can now map accounting statuses per system in the Quote library, including Xero’s default status matrix.
+- Quotes can now sync from an external accounting status, updating Forge status without sending emails, creating jobs, or notifying users.
+- External status sync now records accounting details on the quote and supports webhook firing only when requested.
+- Approved quotes can now be linked to an external quote number without changing the quote’s status.
+
 ## v1.3.94 — 2026-10-26
 
 ### Quotes
