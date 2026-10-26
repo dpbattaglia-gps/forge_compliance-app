@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.96 — 2026-10-26
+
+### Quotes
+- Quotes past their valid-until date now show a past-validity warning and an extend action.
+- You can extend a sent, expired, or approved quote’s validity with a new date and optional note.
+- Expired quotes move back to Sent after extension, and the customer acceptance link works again.
+- Expired quotes still keep Record decision and Create revision as manual next steps.
+### Accounting sync
+- Failed Xero lodgements now show as a retryable Xero failed status without changing the Forge quote status.
+- Accounting write-back webhooks now point to the external-status endpoint, with external reference details included.
+- The older xero-status endpoint is still supported but marked deprecated.
+
 ## v1.3.95 — 2026-10-26
 
 ### Quotes
