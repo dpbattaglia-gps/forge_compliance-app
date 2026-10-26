@@ -3,6 +3,24 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.94 — 2026-10-26
+
+### Quotes
+- You can now filter quotes by status, exclude status, Xero status, and whether they have a Xero link.
+- Quote list filters now support “not these statuses” so Xero sync searches are easier.
+- Quotes now return a clearer error when you use an invalid status filter.
+- You can revise an approved quote and send only the changes back through approval.
+- Approvers now see exactly what changed on a revised quote before approving it.
+- Revised quotes stay in approval flow without going back to draft.
+- Quote status updates from Xero can now move quotes to sent, accepted, or declined.
+- Xero status updates can also trigger quote accepted or declined notifications.
+### Approval pages
+- The approval gate now highlights when a quote is a revision of an approved version.
+- The Approvals page now shows revision changes alongside the quote.
+### Quote editing
+- The quote builder now includes a dedicated revise action for approved quotes.
+- The submit button now sends approved quote edits as a revision instead of a draft reopen.
+
 ## v1.3.93 — 2026-10-23
 
 ### Quotes
