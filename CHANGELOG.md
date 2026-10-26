@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.97 — 2026-10-26
+
+### Quotes
+- Sent quotes now keep a send history showing who sent them, when, to whom, and which revision was sent.
+- Quotes now show whether the client is still on an older version and need re-sending after changes.
+- The send button now changes to “Re-send (changed)” when the client’s copy is out of date.
+- You can now revise a sent quote and send it back through approval again.
+- Quotes show a sent-status badge with recipient count and a history popover for past sends.
+
 ## v1.3.96 — 2026-10-26
 
 ### Quotes
