@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.98 — 2026-10-27
+
+### Jobs and sites
+- Job and site address fields now accept pasted Google Maps links as well as plain street addresses.
+- Address links now display a clean place name or pin location instead of the raw URL.
+- Open in Google Maps now opens the exact pasted location.
+- Directions and Navigate to site now route to the saved pin.
+- The jobs map now plots addresses from pasted Google Maps links, including short share links.
+### Where you’ll see it
+- Address links now work across job details, job lists, client sites, sign-on, and both mobile job screens.
+- The map preview now centers on the linked location.
+
 ## v1.3.97 — 2026-10-26
 
 ### Quotes
