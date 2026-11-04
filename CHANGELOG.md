@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.99 — 2026-11-04
+
+### Jobs
+- Each job now shows its site timezone so date and time details are easier to interpret.
+### Service reports
+- Sign-on times in service reports are shown in the site’s local time with clear timezone labels.
+- Daylight saving time is handled automatically for sign-on times in service reports.
+### Incidents
+- Incident emails now list personnel sign-on times in the correct local timezone.
+### Exports
+- Attendance CSV exports now show sign-on times in the site’s local time with timezone labels.
+
 ## v1.3.98 — 2026-10-27
 
 ### Jobs and sites
