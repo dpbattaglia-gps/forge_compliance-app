@@ -3,6 +3,23 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.100 — 2026-11-06
+
+### Business
+- Added a Business page with revenue, gross profit, jobs, win rate, monthly trends, top clients, and service mix by task type.
+- Added date filters for this year, FY, 6/12/24 months, last year, and custom ranges.
+- Added a goal planner to set annual revenue and gross profit targets and track pace, gap, and monthly run-rate needed.
+- Added sales mix planning to show how many jobs of each service type are needed to close the gap.
+- Added a what-if planner so managers can model their own sales mix.
+- Added a note for unpriced jobs so missing revenue inputs are easy to find and fix.
+### Access control
+- Rebuilt access around roles, permission sets, and per-person exceptions.
+- Roles now show who a user can see, whether they are in-house, and whether they manage people.
+- Added reusable permission sets for common access bundles and special grants like quote approval and report signing.
+- Added an effective access view so each person can see where their permissions come from.
+- Moved approval and reporting switches into the main access screen.
+- Added separate access tabs for people and permission sets.
+
 ## v1.3.99 — 2026-11-04
 
 ### Jobs
