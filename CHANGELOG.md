@@ -3,6 +3,27 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.101 — 2026-11-08
+
+### Reports and approvals
+- Reports now follow configurable approval gates before sign-off, with per-gate assignees and support for job-specific workflows.
+- Reviewers can see the full gate trail, and My Approvals now shows which gate is waiting and who owns it.
+- Report outcome flags can now trigger follow-up actions like return visits, draft quotes, and defect tracking.
+- Signing is blocked until the first required gate is approved.
+### Jobs
+- You can now schedule a return job from a follow-up with the new job prefilled and linked back to the original case.
+- Job details now show active report holds and related follow-ups, with a resolve action to clear them.
+### Quotes and pricing
+- Quotes now price SLA-covered sites differently and explain why the price changed.
+- You can now create a draft quote directly from a rectification recommendation in a report.
+### New job creation
+- You can now attach a PO document while creating a new job.
+### Clients
+- Clients now show an SLA badge and can be filtered to SLA-only.
+### Navigation
+- Users can now reorder the sidebar menu and save their preferred layout.
+- Admins can set the company-wide default sidebar order.
+
 ## v1.3.100 — 2026-11-06
 
 ### Business
