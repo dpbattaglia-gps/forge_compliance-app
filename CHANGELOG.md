@@ -3,6 +3,24 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.106 — 2026-11-09
+
+### Branding
+- You can now place the approval stamp logo above, below, left, or right of the full signature block.
+- The signing preview and PDF output now match the chosen stamp layout more closely.
+### Admin settings
+- Explanatory helper text is now tucked behind info icons across most settings and library pages.
+### Job reports
+- Service reports now show a short summary line up front, with full send and history details behind an info icon.
+### Job files
+- File upload guidance is now behind info icons, and AI notes are collapsed into compact chips with an observation flag.
+### Access control
+- Access Control now uses info icons to hide longer helper text.
+### Quotes and pricing
+- Quote library, pricing, terms, line fields, and related setup screens now use info icons for helper text.
+### Servers
+- The Servers card can now show update results per node when your deploy workflow calls back the status.
+
 ## v1.3.105 — 2026-11-09
 
 ### Settings
