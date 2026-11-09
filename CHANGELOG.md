@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.103 — 2026-11-09
+
+### Dashboard
+- You can now choose and reorder your own KPI tiles from the Dashboard.
+- Dashboard tiles are limited to sections you’re allowed to access.
+- New tiles include report overdue, reports on time this month, actions, compliance alerts, and service and invoicing summaries.
+- Each tile opens the matching filtered list so you can act faster.
+### Reports
+- The report due clock now starts from the engineer’s last actual sign-off when that is later than the scheduled time.
+### Jobs
+- The jobs list now highlights items that are overdue for report submission.
+
 ## v1.3.102 — 2026-11-09
 
 ### Jobs
