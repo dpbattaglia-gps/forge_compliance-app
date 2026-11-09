@@ -3,6 +3,27 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.102 — 2026-11-09
+
+### Jobs
+- Jobs now show a Report due status, based on the last scheduled site visit plus your configured deadline.
+- Report due badges now show due soon, overdue, and sent on time or late status.
+- Jobs can now be filtered by report state, and the last site visit can be shown as a column.
+- My Actions now includes service reports due for assigned engineers and service managers.
+- New notifications warn the right people before a report is due and while it stays overdue.
+### Sites
+- The Sites list now has a Columns picker so you can show, hide, and reorder site fields.
+- Sites can now display SLA, last service, next service due, equipment count, and job counts.
+- Site columns and CSV exports now match your chosen layout.
+### Serviced Equipment
+- Serviced Equipment now has a Columns picker for base fields and custom specs.
+- Your equipment column choices are saved to your account and carried over automatically.
+- CSV export now follows the columns you choose.
+### Access control
+- Access control is now organised into one screen where you can see each person’s permissions at a glance.
+- You can switch between person-first and roles-and-tags views.
+- Changes now show who is affected, and you can undo them from the toast.
+
 ## v1.3.101 — 2026-11-08
 
 ### Reports and approvals
