@@ -3,6 +3,10 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.108 — 2026-11-09
+
+- Maintenance release.
+
 ## v1.3.107 — 2026-11-09
 
 - Maintenance release.
