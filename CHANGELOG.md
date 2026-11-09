@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.104 — 2026-11-09
+
+### Access control
+- You can now preview the app as another person to see their exact sidebar, dashboard, and permissions in read-only mode.
+- Preview mode shows a banner with an Exit preview button and automatically ends after an hour.
+- Admins can only preview other admins, and every preview is audited.
+### Dashboard
+- You can choose how many tiles appear per row, from Auto to 8, and your choice is saved for next time.
+- Dashboard tiles now show a small up or down trend indicator compared with last month.
+### Sign in
+- Signing in is more reliable and no longer leaves some users on a blank page.
+
 ## v1.3.103 — 2026-11-09
 
 ### Dashboard
