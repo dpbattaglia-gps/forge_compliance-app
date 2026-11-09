@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.105 — 2026-11-09
+
+### Settings
+- Added a Server updates card showing your current and latest release, with a Check now action and an Update servers now button.
+- You can trigger server updates manually with an optional note, and admins get an in-app notification plus a logged request history.
+- You can choose automatic update behavior: manual only, immediate on new release, or a scheduled maintenance window by day and time.
+- Forge now sends an update_requested webhook payload so your host workflow can pull and restart servers.
+- The Servers & updates webhook group now includes update_available and update_requested events.
+- The Server updates card warns if no update webhook is connected and links you to webhook setup.
+
 ## v1.3.104 — 2026-11-09
 
 ### Access control
