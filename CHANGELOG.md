@@ -3,6 +3,23 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.110 — 2026-11-10
+
+### Compliance
+- Export filtered compliance schedules to PDF or Excel from the Compliance screen.
+- Choose a branded PDF timeline, a table report, or both in one export.
+- Export Excel with separate Schedule and Timeline sheets for easier filtering and review.
+- Pick, order, sort, and group report columns, and save your preferred column setup.
+- Add a report title and reader notes before exporting.
+- Include last service, service interval, and last and next site visit dates in the report.
+- Send the exported schedule straight to a client’s contacts with a short email note.
+### Branding
+- Set document header and footer details in Branding settings for compliance exports and quote PDFs.
+- Show your logo, company name, contact details, and custom footer text on exported documents.
+- Add generated date, author, and page numbers to exported reports.
+### Automation
+- Schedule a monthly client digest that emails a fresh compliance schedule PDF automatically.
+
 ## v1.3.109 — 2026-11-10
 
 ### Reports
