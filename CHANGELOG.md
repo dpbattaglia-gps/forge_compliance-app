@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.109 — 2026-11-10
+
+### Reports
+- Review, sign, and send now follow one guided workflow with clearer buttons at each step.
+- Report status badges now show the current stage, from manager review through sent to client.
+- Rejecting, uploading a revised report, or revoking restarts the review flow.
+- Eligible signers are notified when a report is marked reviewed.
+### Task Types
+- Task type cards now show a shorter summary with document count, competency count, role rules, and default duration.
+- In-house task types now show their attached report template in a dedicated template row.
+- Long document and competency lists are collapsed behind a “+N more” link.
+### Jobs
+- Engineers can download the task type’s report template from the job’s Service Reports section.
+
 ## v1.3.108 — 2026-11-09
 
 - Maintenance release.
