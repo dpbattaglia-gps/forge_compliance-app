@@ -3,6 +3,22 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.112 — 2026-11-11
+
+### Compliance
+- Contractors are now tracked as companies, with a daily compliance status based on insurance, agreements, audits, tickets, training, and accepted invites.
+- You can view contractor company compliance on Suppliers, Compliance, and My Training, with exports including the new company category.
+- Admins can set the baseline insurance and agreement rules used to score contractor companies.
+- AI can review signed agreement PDFs and flag whether they appear signed and what insurance minimums they specify.
+### Notifications
+- Company compliance issues now notify the company’s contacts immediately, then weekly until resolved.
+- Contractor companies can have a designated compliance manager who manages the contact list.
+- Individual worker compliance notices now copy the company’s contacts.
+### Server updates
+- Update notices now go only to active, fully set-up accounts, skipping pending invites, suspended users, and people without an email.
+- The update settings page now shows who will be notified and how many people will be skipped.
+- When an update is about to start, Forge can email and notify staff in-app with the expected downtime and an optional message.
+
 ## v1.3.111 — 2026-11-11
 
 ### Jobs
