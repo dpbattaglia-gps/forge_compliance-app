@@ -1,6 +1,6 @@
 # Forge Compliance
 
-**Version:** `v1.3.110` · released `2026-11-10`
+**Version:** `v1.3.111` · released `2026-11-11`
 
 Official **distribution** repository for **Forge Compliance** — the self‑hosted field operations
 & compliance platform: jobs, service reports with PDF sign‑off, on‑site sign‑on & attendance,

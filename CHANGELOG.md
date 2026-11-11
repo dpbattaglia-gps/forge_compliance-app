@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.111 — 2026-11-11
+
+### Jobs
+- Job forms now adapt to the selected job type, hiding sections you do not need and using that type’s own work type list where configured.
+- Create and edit job screens now use collapsible sections with a quick summary when closed.
+- You can now drag to reorder the job menu and company default navigation in Admin settings.
+### Admin settings
+- Settings cards across admin pages are now collapsible, and your open or closed preference is remembered.
+- Job types now let you control which job form sections appear for that type.
+- Job type setup now supports separate work type lists for different job types.
+### Pickers
+- Selection lists keep their scroll position while you tick multiple items, so rows stay in view.
+- A “Move checked to top” action now lets you regroup selected items after searching or selecting.
+
 ## v1.3.110 — 2026-11-10
 
 ### Compliance
