@@ -3,6 +3,23 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.115 — 2026-11-12
+
+### Settings
+- You can now set how many minutes before a server update staff are warned.
+- The server update email template is now editable from Email Templates.
+- Scheduled updates now send a warning email before the update starts.
+### Server updates
+- Pending updates now show an amber banner with a Cancel update button.
+- Cancelling a scheduled update now sends staff an all-clear email.
+- The deployment webhook now runs at the warning time, so scheduled updates still happen on time.
+### Tools
+- Tool asset-booking scans now load faster.
+### Jobs
+- Deliverables and job files now use stricter job-scope access checks.
+### Suppliers
+- The suppliers overview now loads clients more efficiently.
+
 ## v1.3.114 — 2026-11-12
 
 ### Tasks & Deliverables
