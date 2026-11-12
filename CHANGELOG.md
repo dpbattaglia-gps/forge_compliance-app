@@ -3,6 +3,32 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.114 — 2026-11-12
+
+### Tasks & Deliverables
+- Tasks and deliverables now share a cleaner table view with filters, search, and separate create buttons.
+- Deliverable types can start from a document template, require client review, and optionally require client sign-off.
+- Service tasks still use report templates, while deliverables use output settings and milestone percentages.
+### Projects
+- Project jobs now show a Deliverables tab with file upload, issue tracking, and client sign-off status.
+- Issuing a deliverable emails the pack and marks its files as issued.
+- Project billing can pre-fill milestones from deliverables and records invoiced milestones for Xero.
+### Catalogs
+- Catalogs is now a single searchable explorer for job, document, people, equipment, supplier, and job status lists.
+- You can reorder and edit catalog options in place, and saved order now drives dropdowns.
+### Suppliers
+- Supplier settings now include editable supplier types and a requirements catalogue for compliance checks.
+- The supplier page now guides verification with upload, attestation, AI review, and approve or reject steps.
+- Supplier audits now show whether blocking requirements are outstanding or complete.
+- Supplier agreements and contacts have been reorganised for easier tracking.
+### Tools
+- Jobs and task types can now define required tools, including who brings them and how many are needed.
+- Adding a matching task type to a job auto-adds its required tools, with job-level overrides allowed.
+- Job tools can be booked against assets, and clashes with other open jobs are flagged without blocking.
+- Crew-assigned assets now appear as booked on their rostered jobs and show up in sign-on and dispatch emails.
+### Sign-on
+- The mobile sign-on page now shows the crew’s tool list so workers can confirm what they bring.
+
 ## v1.3.113 — 2026-11-12
 
 ### Project jobs
