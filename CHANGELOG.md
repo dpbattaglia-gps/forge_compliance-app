@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.113 — 2026-11-12
+
+### Project jobs
+- Project jobs now have their own form profile, separate from service jobs.
+- Project creation now includes a brief, deliverables, team roles, and optional site details.
+- Project pages now show a brief card with scope, disciplines, dates, and deliverables.
+- Task types can now be marked for Service, Project, or Both, with filters and clearer badges.
+- New project disciplines and project team roles lists make project setup more structured.
+### Suppliers
+- Suppliers now open to a full supplier page with summary details and one place for compliance, insurances, agreements, people, contacts, audits, and notifications.
+- The suppliers list is now a scan-friendly table with compliance, insurance, audit, and contact columns plus faster filtering and sorting.
+- Supplier insurance records now use an inline register with expiry tracking, certificate upload, AI prefill, and approve actions.
+- Contractor managers can upload their own insurance records, while approval stays with the right team.
+
 ## v1.3.112 — 2026-11-11
 
 ### Compliance
