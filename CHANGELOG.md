@@ -3,6 +3,29 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.116 — 2026-11-13
+
+### Access control
+- You can now restrict who can edit job equipment and job notes separately, with contractor managers blocked by default.
+- Existing custom roles kept their current level of access, so this change only takes effect when you adjust it.
+- Editing job equipment now checks access to that specific job, not just general job-edit rights.
+### Documents and packs
+- SWMS/JSA packs now let you choose whether edited-and-restored content stays approved or needs fresh sign-off.
+- Other document types can now use the same prepare, review, sign, and reuse flow.
+- Signed packs with high-severity AI findings now lose reusable approval.
+### Checks and approvals
+- AI review badges now show when a document has been checked.
+- You can now open and approve notes from the approvals screen.
+### Jobs
+- Project engineers assigned to a job can now send client documents themselves.
+- Job equipment and notes are now read-only for users without the right access.
+- You can now add and edit job equipment from the job screen when your role allows it.
+### Quotes
+- Contractor managers no longer see client totals on jobs and quotes they cannot access.
+### Suppliers
+- Supplier audits now have dedicated settings and a public audit page for sharing evidence.
+- The supplier QA area now supports audits and review of supplier responses.
+
 ## v1.3.115 — 2026-11-12
 
 ### Settings
