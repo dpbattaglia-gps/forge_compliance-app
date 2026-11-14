@@ -3,6 +3,27 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.117 — 2026-11-14
+
+### Quotes
+- Saved quotes can now include supporting documents such as emails, PDFs, spreadsheets and supplier pricing notes.
+- Default clause sets can now be applied in the quote builder to speed up quote creation.
+- The quote builder has been streamlined with a cleaner start flow and improved line-item entry.
+### Compliance and actions
+- A new QMS Planner replaces Checks & Actions with separate views for scheduled checks and actions.
+- You can now create, edit and manage checks and actions from dedicated planner forms.
+- The planner highlights overdue checks, checks due this week and open actions at a glance.
+### Profile and training
+- Your profile now shows which competencies and licences are required for your upcoming jobs.
+- Missing or expired competencies can be added or renewed directly from the profile or My Actions.
+- Competency tasks are counted once per skill, even if multiple jobs need the same one.
+- Company compliance items now count correctly in your action totals.
+### Jobs
+- Job creation now surfaces required competencies earlier so you can see fit before saving.
+- Job details now show clearer competency matching for the assigned team.
+### Settings
+- Competency and gap settings now include more control over how required skills and action counts are handled.
+
 ## v1.3.116 — 2026-11-13
 
 ### Access control
