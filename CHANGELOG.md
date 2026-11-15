@@ -3,6 +3,13 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.118 — 2026-11-15
+
+### Mobile Actions
+- The mobile Actions screen now includes the same team items as desktop, including missing or expired competencies, due service reports, and due supplier checks.
+- Managers can send a reminder from team competency gaps on mobile.
+- The “For you” section now shows your assigned checks and actions, plus SWMS/JSA packs not ready for upcoming jobs and service reports due on your jobs.
+
 ## v1.3.117 — 2026-11-14
 
 ### Quotes
