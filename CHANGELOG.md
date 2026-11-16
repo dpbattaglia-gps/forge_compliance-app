@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.122 — 2026-11-16
+
+### Jobs
+- Jobs with bad due-date data now stay visible, so one broken record no longer stops the whole Jobs list from loading.
+- Jobs with unreadable due dates now appear without a due date instead of causing an error.
+- State names are now accepted in different formats, and unknown states fall back to national holidays.
+### Dashboard, Approvals, Compliance, and Notices
+- Due-date calculations used across dashboard tiles, approvals, compliance, and daily notices are now more resilient to bad job data.
+
 ## v1.3.121 — 2026-11-16
 
 ### Jobs
