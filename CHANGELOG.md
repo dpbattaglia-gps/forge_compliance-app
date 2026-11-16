@@ -3,6 +3,23 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.121 — 2026-11-16
+
+### Jobs
+- Jobs now show a “Next visit” column so you can see the upcoming service date at a glance.
+### Email
+- Fewer email notifications are sent for update notices, reducing unnecessary inbox noise.
+- The new email log lets you review sent messages, their status, and AI-assisted checks.
+- Update notices now support configurable send times and notice-hour rules.
+### Settings
+- API keys can now be restricted by IP, proxy hops, and other rules for tighter access control.
+- API keys can be grouped by scope so each key only accesses the areas it needs.
+- Integration settings are now split into clearer tabs for single sign-on, email, and accounting connections.
+### Suppliers
+- You can now exempt suppliers from Professional Indemnity insurance requirements when appropriate.
+### Reports
+- Report workflow settings have been simplified to make managing report submission and review easier.
+
 ## v1.3.120 — 2026-11-16
 
 ### Settings
