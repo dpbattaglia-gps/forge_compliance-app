@@ -3,6 +3,29 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.120 — 2026-11-16
+
+### Settings
+- The accounting status map moved to Settings under Integrations, and it no longer appears in the Quote library.
+- You can now rename OEMs in the catalog settings.
+- Supplier requirements are now easier to manage from Settings with a clearer checklist layout.
+### Suppliers
+- A new supplier advisor helps you review supplier requirements and recommended actions in one place.
+- Supplier details now include a clearer requirements checklist.
+- Supplier pages now surface insurance applicability more clearly.
+### Assets
+- Assets can now show attached files and documents directly from the asset record.
+- Asset certificate handling was expanded to better support compliance documents.
+### Jobs
+- Jobs now link quotes more clearly, with better quote selection and display in the job view.
+- Job list columns were updated to show more useful quoting and invoicing details.
+- Mobile job details were updated to match the latest job workflow.
+### Quotes
+- Quote terms suggestions were improved to help you add the right wording faster.
+- The quote builder and quote library now reflect the latest terms and status updates.
+### Invoicing
+- Invoice badges and invoice details were updated for clearer billing status at a glance.
+
 ## v1.3.119 — 2026-11-16
 
 ### Quotes
