@@ -3,6 +3,26 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.119 — 2026-11-16
+
+### Quotes
+- Quote details now keeps Pricing factors visible again.
+- The Check prices action has moved into the top toolbar for quicker access.
+- New quotes now open with the next-step price card visible straight away.
+- Quotes now use three tabs for the main quote, supporting documents, and payments.
+- Quote follow-ups now appear on the Compliance timeline, grouped by follow-up or valid-until date.
+### Tasks
+- Task types can now include SWMS/JSA documents for the job.
+- The task editor now lets you configure SWMS/JSA documents more easily.
+### Compliance
+- The Compliance page now includes quote follow-ups as a filterable item.
+- Overdue report deadlines now follow business-day rules.
+### Suppliers
+- Insurance requirements can now be set by supplier role.
+- Supplier insurance settings are easier to manage from the supplier screen.
+### Documents
+- Document packs and send-document flows now better support the updated quote and job document options.
+
 ## v1.3.118 — 2026-11-15
 
 ### Mobile Actions
