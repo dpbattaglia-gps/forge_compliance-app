@@ -3,6 +3,24 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.123 — 2026-11-17
+
+### Suppliers
+- Suppliers now have one insurance register with required, minimum cover, policy, status, and actions in each row.
+- You can override insurance requirements per row, including automatic, required, and not required.
+- PI is now exempt when there is no design work, and that exemption is applied across supplier checks and alerts.
+- Contractor managers can view their own company’s insurance requirements and gaps, but cannot edit them.
+### Agreements
+- You can create supplier agreement templates in Settings using Word, PDF, or built-in Forge templates with tokens.
+- Supplier agreements now support prepare, send, review, sign, request changes, and countersign flows.
+- Fully signed agreements are locked, saved as a final PDF with signatures and signing certificate, and older versions are marked superseded.
+- Supplier agreements can now be sent for signature from the supplier page.
+### Compliance
+- The AI supplier review has moved into the Compliance section.
+- Audits are now shown only in the Audits section.
+### Supplier profile
+- Suppliers now have a registered address field used in agreement templates and signing.
+
 ## v1.3.122 — 2026-11-16
 
 ### Jobs
