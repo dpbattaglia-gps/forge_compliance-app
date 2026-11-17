@@ -3,6 +3,16 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.127 — 2026-11-17
+
+### Quotes
+- Choose how the internal margin panel appears: floating, pill with side panel, bottom card, or always-open on wide screens.
+- Override automatic labour, hourly, call-out, and day-line values directly on the quote line, with undo back to automatic.
+- Enter a typed labour rate or day line hours to replace the calculated amount, including client rates and SLA discounts.
+- Mark client-facing quote lines as optional so they can be excluded from the main total and shown separately.
+- Send optional items to clients on the public quote page and acceptance dialog, where they can be added during acceptance.
+- Show optional items separately in the PDF, either inline or in their own section.
+
 ## v1.3.126 — 2026-11-17
 
 - Maintenance release.
