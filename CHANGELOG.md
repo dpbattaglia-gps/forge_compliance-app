@@ -3,6 +3,23 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.124 — 2026-11-17
+
+### Quotes
+- Supporting documents now open in the browser, including PDFs, images, emails, Office files, CSVs, text files, and ZIP contents.
+- Email previews now show the message body safely and let you download attached files.
+- Quote History now logs document activity, PDF views, AI price checks, STC reviews, and edited fields.
+- Quote History updates immediately, so new activity appears without refreshing.
+- Payment terms are no longer added to new quotes automatically.
+- Deleting a quote now also removes its unshared supporting files.
+### Xero
+- Quotes now check Xero status while lodging or updating, so write-back errors appear without reloading.
+- The error chip now opens the full Xero error and a retry option.
+- Quote numbers now resolve to the current revision when checking Xero status or write-backs.
+### Admin and audit
+- More quote, settings, compliance, integration, and licence changes now appear in the admin audit log with readable names.
+- Missing records now return a not found response instead of being handled as updates.
+
 ## v1.3.123 — 2026-11-17
 
 ### Suppliers
