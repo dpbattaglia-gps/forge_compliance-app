@@ -3,6 +3,23 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.125 — 2026-11-17
+
+### Jobs
+- You can now select multiple jobs and bulk edit status, job type, tasks, people, client, site, quote, PO, invoice number, and invoice state.
+- Bulk edits respect each job’s usual validation, and any jobs that can’t be changed are skipped with a reason.
+- Jobs list selection follows your current filters, search, and tab, with a bar showing how many jobs are selected.
+- You can now edit jobs that are not yet invoiced, including invoice-related fields where you have access.
+### Columns
+- Invoice and Commercial are now separate columns, so choosing one no longer changes the other.
+- Invoice number now appears in the Invoice column, with older layouts converted automatically.
+- The Commercial column now shows quote, PO, and invoice icons in one compact strip.
+- Admins can save a column layout as the company default for Jobs, Equipment, and Sites.
+- You can reset your columns back to the company default from the Columns picker.
+### Sites
+- Sites now support the same bulk selection and bulk edit workflow as Jobs.
+- Sites now use the updated column preferences, including company defaults.
+
 ## v1.3.124 — 2026-11-17
 
 ### Quotes
