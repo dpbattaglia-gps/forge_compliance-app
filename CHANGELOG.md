@@ -3,6 +3,17 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.131 — 2026-11-18
+
+### Quotes
+- Quote section headers now use a cleaner, consistent layout with aligned icons and spacing.
+- Xero lodge and update actions now live in the Xero chip, keeping quote actions easier to find.
+- The price check button now sits beside the review steps for quicker access.
+- Quote review now shows Step 1 and Step 2 side by side, with clearer status details on Step 2.
+- STC findings now use tabs for To fix, Fixed, Reviewed, and Saved answers.
+- You can now act on each finding inline with quick fix, dismiss, and expand controls.
+- The review summary now shows how many items need review, need fixing, and have been reviewed.
+
 ## v1.3.130 — 2026-11-18
 
 ### Admin
