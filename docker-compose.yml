@@ -44,6 +44,8 @@ services:
       VAPID_PUBLIC_KEY: ${VAPID_PUBLIC_KEY:-}
       VAPID_PRIVATE_KEY_PATH: ${VAPID_PRIVATE_KEY_PATH:-/secrets/private_key.pem}
       VAPID_SUBJECT: ${VAPID_SUBJECT:-mailto:admin@example.com}
+      # Exact PDFs from Word templates via the gotenberg service below (leave empty to use simplified PDFs).
+      GOTENBERG_URL: ${GOTENBERG_URL:-http://gotenberg:3000}
     volumes:
       # Host folder that receives the automatic nightly .zip backups (matches BACKUP_DIR).
       - ${BACKUP_HOST_DIR:-./backups}:/backups
@@ -51,6 +53,23 @@ services:
       - ${VAPID_SECRETS_DIR:-./secrets}:/secrets:ro
     expose:
       - "8001"
+    networks: [default, pdf]
+
+  # Exact Word → PDF for quote/agreement templates (LibreOffice inside an isolated container).
+  # No ports, no internet (internal network), only the backend can reach it. Optional — remove to fall back to simplified PDFs.
+  gotenberg:
+    image: gotenberg/gotenberg:8
+    restart: unless-stopped
+    command:
+      - gotenberg
+      - --api-timeout=90s
+      - --webhook-disable=true
+      - --chromium-disable-routes=true
+      - --libreoffice-auto-start=true
+      - --log-level=warn
+    security_opt:
+      - no-new-privileges:true
+    networks: [pdf]
 
   frontend:
     image: ${FRONTEND_IMAGE:?set FRONTEND_IMAGE in .env}
@@ -62,3 +81,8 @@ services:
 
 volumes:
   mongo_data:
+
+networks:
+  default:
+  pdf:
+    internal: true

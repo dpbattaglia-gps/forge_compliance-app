@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.136 — 2026-11-18
+
+### Quotes
+- Forge can now generate exact PDFs for quote templates, client emails, and supplier agreements when Gotenberg is installed.
+- Quote template settings now show whether exact PDF generation is available.
+- Quote revisions no longer lose your unsaved edits when you click Xero actions.
+- Xero update, lodge, and retry buttons stay disabled until you submit or cancel a quote revision.
+- Quote terms now support the same rich text formatting as other editable fields.
+- Quote descriptions and introductions now use the font, size, and color you set in the Word template.
+- Preview as client now shows formatted quote text and placeholder highlights correctly.
+### Documents and agreements
+- Client emails now use exact PDF generation when Gotenberg is available.
+- Supplier agreement PDFs now use exact PDF generation when Gotenberg is available.
+
 ## v1.3.135 — 2026-11-18
 
 ### Quotes
