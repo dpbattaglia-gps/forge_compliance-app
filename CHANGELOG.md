@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.128 — 2026-11-18
+
+### Quotes
+- The quote builder is cleaner, with the main header and toolbar on one line and view settings moved into the more menu.
+- Optional client lines can now be toggled like other quote lines and are grouped as “Optional extras” in section layout.
+- The intro section is collapsible and remembers your choice for each quote.
+- You can add lines faster from past quotes, building blocks, or the catalogue, with a quicker add-line action in each section.
+- Forge now checks quote wording for grammar and consistency, with inline suggestions you can accept or reject.
+- You can run a full text check from the quote review flow and manage spelling style in Settings.
+### Documents
+- Companies can now use their own Word template for quotes and download quote documents as .docx files.
+- Quote PDFs, packs, and public PDFs now use the selected Word template.
+- Exact Word-to-PDF rendering now depends on LibreOffice and the required fonts being available on your server.
+
 ## v1.3.127 — 2026-11-17
 
 ### Quotes
