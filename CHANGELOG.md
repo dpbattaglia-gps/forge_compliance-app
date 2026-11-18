@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.129 — 2026-11-18
+
+### Email
+- Email templates now support custom sender names and reply-to addresses, so outgoing mail can come from the right person or team.
+- More email types are now fully templated, including quotes, service reports, job documents, project deliverables, cancellations, agreements, and supplier notices.
+- The Email Templates settings page now lets you search, edit, preview, copy placeholders, and reset templates from one screen.
+- Email log counts can now include each recipient in To, CC, and BCC, matching per-recipient delivery reporting.
+- Email log entries now show template and sender details for easier tracking.
+
 ## v1.3.128 — 2026-11-18
 
 ### Quotes
