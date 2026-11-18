@@ -3,6 +3,13 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.133 — 2026-11-18
+
+### Quotes
+- Upload checks now let harmless field-name typos through with an amber warning.
+- Upload checks now block broken template fields with a clearer message and guidance on where to fix them.
+- Server-side template errors now show “Server setup issue — your file is fine” so users know the problem is not their document.
+
 ## v1.3.132 — 2026-11-18
 
 ### Text checks
