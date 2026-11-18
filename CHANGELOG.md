@@ -3,6 +3,11 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.134 — 2026-11-18
+
+### Quotes
+- Word template uploads now work in self-hosted Docker deployments by including the required document-filling support in the runtime image.
+
 ## v1.3.133 — 2026-11-18
 
 ### Quotes
