@@ -3,6 +3,17 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.132 — 2026-11-18
+
+### Text checks
+- Grammar checks now recover from messy AI responses, so users are less likely to see a spinner instead of results.
+- The result panel now shows the last check time and whether changes were found, needed, or failed.
+- Each text box now shows its own check status, including no changes, changes shown, failed, or timed out.
+### Quote templates
+- You can upload multiple Word templates at once.
+- Forge now converts .doc and .odt template files to .docx during upload when LibreOffice is available.
+- If conversion tools are missing, Forge now tells you clearly what to install.
+
 ## v1.3.131 — 2026-11-18
 
 ### Quotes
