@@ -3,6 +3,21 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.130 — 2026-11-18
+
+### Admin
+- Notification routing now uses a searchable list with a separate editor, plus more settings for digests and sign-on rules.
+- You can target notification recipients by role or tag, and see a live preview of reachable recipients.
+- Webhooks now use a split layout with triggers, delivery log, and custom triggers grouped in one place.
+- Manager assignments are now managed per person, with search, company grouping, and a no-manager filter.
+- Access control now uses one streamlined screen for roles, tags, and people.
+### Training
+- Contractor managers now see only the Training Matrix for their own company.
+- Contractor employees no longer get full training page access by default.
+### Service Reports
+- Contractors without report access can only view or download service reports they created.
+- Report file access now follows the same contractor restrictions.
+
 ## v1.3.129 — 2026-11-18
 
 ### Email
