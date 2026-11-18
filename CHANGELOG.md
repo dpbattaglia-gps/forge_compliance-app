@@ -3,6 +3,19 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.135 — 2026-11-18
+
+### Quotes
+- Added text formatting tools for quote introduction and client-facing lines.
+- Quote PDFs now preserve long text across pages with repeated headings and better column alignment.
+- Quote PDFs and previews now include client ABN, ACN, and address details.
+### Clients
+- Client details now show ABN, ACN, and address information more clearly.
+### Suppliers
+- Supplier details now show ABN, ACN, and address information more clearly.
+### Agreements
+- Agreement documents now include client ABN, ACN, and address details.
+
 ## v1.3.134 — 2026-11-18
 
 ### Quotes
