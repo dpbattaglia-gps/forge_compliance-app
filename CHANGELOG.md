@@ -3,6 +3,18 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.141 — 2026-11-19
+
+### Site reports
+- Users can now open and generate a site report from a site’s overview and client pages.
+- Site reports now include the site’s jobs, equipment, photos, documents, quotes, and service history in one PDF.
+- Site report PDFs now respect the selected site report layout and quote details.
+- Site reports now open in a dedicated dialog for easier review before download or sharing.
+### Sites
+- The sites list and site overview now surface the new site report action more clearly.
+### Frontend performance
+- The app build is much faster again after removing an unnecessary PDF viewer dependency from the browser bundle.
+
 ## v1.3.140 — 2026-11-19
 
 ### Jobs
