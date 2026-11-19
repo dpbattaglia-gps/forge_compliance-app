@@ -3,6 +3,20 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.140 — 2026-11-19
+
+### Jobs
+- The job page header now shows a cleaner summary with the service number, job title, address, current status, and next-step count.
+- Outcome flags now follow the job through to closed, so quote-required steps stay linked as the job progresses.
+- Short flag labels now appear in the job flow, making outcome statuses easier to scan.
+- The job page now shows related steps more clearly, helping you see what follows next.
+### Quotes
+- Creating or sending a quote now links it back to the job’s required outcome step.
+- Quote-related follow-up steps now stay tied to the right job outcome as work moves forward.
+### Reports
+- Service reports now use the updated step flow so follow-up actions are shown in the correct order.
+- Report workflow dialogs now include the latest flag-label behavior.
+
 ## v1.3.139 — 2026-11-19
 
 ### Admin and settings
