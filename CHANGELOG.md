@@ -3,6 +3,25 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.139 — 2026-11-19
+
+### Admin and settings
+- Admins can now see navigation usage, showing which pages and links teams use most.
+- The sidebar order settings now make it easier to reorder menu items.
+- Email templates can now be edited for compliance and report messages.
+### Jobs and follow-ups
+- Job follow-ups now show more complete details to help teams review next steps faster.
+- Job outcomes are now tracked more clearly from the job workflow.
+### Quotes
+- The quote toolbar has been streamlined to make quote actions quicker to reach.
+- Quote terms have been updated to better support quote setup and review.
+### Sites
+- Site overview is now available, giving a clearer summary of each site in one place.
+- Site status badges now show the current site state more clearly in lists and overview screens.
+### Compliance and reports
+- Compliance screens now surface more relevant company compliance information.
+- Service report review has been refined to make checking reports easier.
+
 ## v1.3.138 — 2026-11-19
 
 ### Quotes
