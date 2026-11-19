@@ -3,6 +3,15 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.138 — 2026-11-19
+
+### Quotes
+- Older quote links now keep working when the quote page can load but its data request was blocked.
+- Customers can open quote acceptance pages through the public link more reliably.
+### Jobs
+- Job pages now show status, outcome, and open next steps directly under the job title.
+- You can change a job’s status or outcome from the job page.
+
 ## v1.3.137 — 2026-11-19
 
 ### Quotes
