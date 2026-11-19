@@ -3,6 +3,21 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.137 — 2026-11-19
+
+### Quotes
+- Clients can now open quote packs online, view included documents, and must accept the pack terms before approving a quote.
+- Quote emails now support more flexible sending options for packs and recipients.
+### Jobs
+- You can now set next steps in bulk from the jobs list.
+- Job outcome and next-step details are now easier to capture from job records.
+### Service reports
+- Report follow-up prompts are now clearer and better integrated into the report workflow.
+- Access to report follow-up steps now respects the report gate more consistently.
+### Settings
+- Email template settings now include the new quote and notification wording used in this release.
+- Report workflow settings now reflect the updated follow-up and approval flow.
+
 ## v1.3.136 — 2026-11-18
 
 ### Quotes
