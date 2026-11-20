@@ -3,6 +3,26 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.142 — 2026-11-20
+
+### Jobs
+- Job linking now only shows jobs for the same client and site, making it easier to pick the right existing job.
+- The jobs table now shows next-step flags at a glance.
+### Compliance
+- Client competency rules can now be edited in the app.
+- Compliance checks now use the updated competency and role rules for client access.
+### Quotes
+- Quotes can now be limited to selected sites.
+- Quote screens now support choosing which sites are included.
+- Quote PDFs and documents now include the selected site information.
+### Reports
+- Job follow-up reports now show the updated next-step details more clearly.
+- Step-pathway reports now better reflect the new workflow and role rules.
+### Suppliers
+- Supplier details now show the updated role and site-related compliance information.
+### PDF viewing
+- The app now serves PDF viewer assets correctly in self-hosted setups, so report review and related PDF views load properly.
+
 ## v1.3.141 — 2026-11-19
 
 ### Site reports
