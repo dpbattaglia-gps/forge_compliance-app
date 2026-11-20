@@ -3,6 +3,21 @@
 All notable changes to the Forge Compliance product are documented here.
 Newest release first.
 
+## v1.3.143 — 2026-11-20
+
+### Jobs
+- Jobs now show known issues more clearly so teams can see what needs attention after a visit.
+- Job next steps now reflect the new outcome-and-flag setup for clearer follow-up action.
+### Service reports
+- Service reports now separate visit outcome from follow-up flags, so teams can record what happened and what comes next.
+- New follow-up flags can mark work for return visits, quotes, investigation, education, or manager review.
+- Report completion now uses the new flag rules, including cases that should stay open for follow-up.
+### Settings
+- Report workflow settings now use the new simplified outcome-and-flag model.
+- Managers can configure how report outcomes trigger follow-up flags and next steps.
+### Compliance
+- Compliance views now use the updated report workflow logic for service follow-up and completion handling.
+
 ## v1.3.142 — 2026-11-20
 
 ### Jobs
